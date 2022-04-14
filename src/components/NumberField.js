@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 class NumberField extends React.Component {
     render () {
-        return <input type="number"></input>
+        return <div>
+        <input type="number"></input>
+        </div>
     }
 }
 export default NumberField;
