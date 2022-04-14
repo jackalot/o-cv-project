@@ -8,3 +8,5 @@ date from and until when you worked for that company)
 * data components that use numbers: phone number, date of study,
  date from and until when you worked for that company
 
+* data components that use dates: date of study, date from and until when you worked for that company
+
