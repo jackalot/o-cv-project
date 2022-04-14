@@ -3,7 +3,8 @@ import React, { Component } from "react";
 class NumberField extends React.Component {
     render () {
         return <div>
-        <input type="number"></input>
+            <label htmlFor={this.props.fieldName}></label>
+        <input id={this.props.fieldName} type="number"></input>
         </div>
     }
 }
