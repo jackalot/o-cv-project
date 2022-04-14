@@ -1,1 +1,6 @@
 Focus: Work out which components we need for our individual sections of our CV app:
+Sections we need:
+* We need a section for general information, like name, email, phone number.
+* A section to add your educational experience (school name, title of study, date of study)
+* A section to add practical experience (company name, position title, main tasks of your jobs, 
+date from and until when you worked for that company)
