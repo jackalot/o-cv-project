@@ -4,3 +4,7 @@ Sections we need:
 * A section to add your educational experience (school name, title of study, date of study)
 * A section to add practical experience (company name, position title, main tasks of your jobs, 
 date from and until when you worked for that company)
+
+* data components that use numbers: phone number, date of study,
+ date from and until when you worked for that company
+
