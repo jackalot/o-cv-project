@@ -14,5 +14,5 @@ date from and until when you worked for that company)
 main tasks of your jobs,
 
 + create a file named number field {
-    
+    + we will import React, components
 }
