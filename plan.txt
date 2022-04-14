@@ -15,4 +15,7 @@ main tasks of your jobs,
 
 + create a file named number field {
     + we will import React, components
+    + create a class called NumberField that extends React.component {
+        
+    }
 }
