@@ -17,7 +17,7 @@ main tasks of your jobs,
     + we will import React, components
     + create a class called NumberField that extends React.component {
         + add a render function {
-            
+            + add a return statement, make it return something with the input of type of number
         }
     }
 }
