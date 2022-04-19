@@ -6,6 +6,7 @@ class OverView extends React.Component {
       return <div>
         <label htmlFor="phoneNumber">Please enter a phone number</label>
         <input className="phone-number" type="tel"></input>
+        <DateField fieldName="dateOfStudy" className="date-of-study" labelText="When did you study here?"></DateField>
       </div>
     }
 }
