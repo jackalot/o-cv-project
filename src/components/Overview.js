@@ -3,7 +3,11 @@ import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
 class EducationalExperience extends React.component {
-  
+  render() {
+    return <div>
+      
+    </div>
+  }
 }
 class GeneralInformation extends React.Component {
   render () {
