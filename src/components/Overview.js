@@ -3,7 +3,7 @@ import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
 class EducationalExperience extends React.component {
-  render() {
+  render () {
     return <div>
       <TextField fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
       <TextField fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
@@ -27,6 +27,7 @@ class OverView extends React.Component {
     render () {
       return <div>
         <GeneralInformation></GeneralInformation>
+        <EducationalExperience></EducationalExperience>
       </div>
     }
 }
