@@ -7,6 +7,7 @@ class EducationalExperience extends React.component {
     return <div>
       <TextField fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
       <TextField fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
+      <DateField fieldName="dateOfStudy" className="study-date" labelText="When did you study here?"></DateField>
     </div>
   }
 }
@@ -26,7 +27,6 @@ class OverView extends React.Component {
     render () {
       return <div>
         <GeneralInformation></GeneralInformation>
-        <DateField fieldName="dateOfStudy" className="date-of-study" labelText="When did you study here?"></DateField>
       </div>
     }
 }
