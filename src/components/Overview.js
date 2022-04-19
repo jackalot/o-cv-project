@@ -3,7 +3,9 @@ import NumberField from "./NumberField";
 import DateField from "./DateField";
 class OverView extends React.Component {
     render () {
-      return <h1> Test </h1>;
+      return <div>
+        <NumberField fieldName='Phone Number' className='phone-number' labelText='Enter Your Phone number'></NumberField>
+      </div>;
     }
 }
 export default OverView;
