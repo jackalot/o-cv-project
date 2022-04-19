@@ -6,7 +6,8 @@ class GeneralInformation extends React.Component {
   render () {
     return <div>
        <TextField fieldName="name" className="our-name" labelText="What is your name?"></TextField>
-       
+       <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
+       <input className="your-email" id="yourEmail" type='email'></input>
     </div>
   }
 }
