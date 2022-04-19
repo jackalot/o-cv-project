@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
+class GeneralInformation extends React.Component {
+  
+}
 class OverView extends React.Component {
     render () {
       return <div>
