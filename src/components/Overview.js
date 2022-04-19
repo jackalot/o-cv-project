@@ -8,6 +8,8 @@ class PracticalExperience extends React.Component {
       <TextField fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
       <TextField fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
       <TextField fieldName="mainTasks" className="main-tasks" labelText="What were the main tasks at your join at that company?"></TextField>
+      <DateField fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+      <DateField fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
     </div>
   }
 }
