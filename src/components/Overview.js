@@ -16,6 +16,7 @@ class GeneralInformation extends React.Component {
 class OverView extends React.Component {
     render () {
       return <div>
+        <GeneralInformation></GeneralInformation>
         <DateField fieldName="dateOfStudy" className="date-of-study" labelText="When did you study here?"></DateField>
       </div>
     }
