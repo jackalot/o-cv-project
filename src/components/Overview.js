@@ -5,6 +5,7 @@ import TextField from "./TextField";
 class PracticalExperience extends React.Component {
   render () {
     return <div>
+      <h1>Practical Experience</h1>
       <TextField fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
       <TextField fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
       <TextField fieldName="mainTasks" className="main-tasks" labelText="What were the main tasks at your join at that company?"></TextField>
