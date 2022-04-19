@@ -5,7 +5,8 @@ import TextField from "./TextField";
 class GeneralInformation extends React.Component {
   render () {
     return <div>
-      
+       <TextField fieldName="name" className="our-name" labelText="What is your name?"></TextField>
+       
     </div>
   }
 }
