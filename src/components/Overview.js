@@ -5,7 +5,7 @@ import TextField from "./TextField";
 class EducationalExperience extends React.component {
   render() {
     return <div>
-      
+      <TextField fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
     </div>
   }
 }
