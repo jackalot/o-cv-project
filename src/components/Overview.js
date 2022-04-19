@@ -6,6 +6,7 @@ class EducationalExperience extends React.component {
   render() {
     return <div>
       <TextField fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
+      <TextField fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
     </div>
   }
 }
