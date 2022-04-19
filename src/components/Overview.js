@@ -5,6 +5,7 @@ import TextField from "./TextField";
 class PracticalExperience extends React.Component {
   render () {
     return <div>
+      <TextField fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
       
     </div>
   }
