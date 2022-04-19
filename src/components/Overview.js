@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
-class EducationalExperience extends React.component {
+class EducationalExperience extends React.Component {
   render () {
     return <div>
       <TextField fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
