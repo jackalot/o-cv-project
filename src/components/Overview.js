@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
+class PracticalExperience extends React.Component {
+  
+}
 class EducationalExperience extends React.Component {
   render () {
     return <div>
