@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <form>
+        <form onSubmit={this.onSubmitTask}>
         <OverView></OverView>
         <input type='submit'></input>
         </form>
