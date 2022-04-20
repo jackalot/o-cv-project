@@ -4,8 +4,8 @@ class TextField extends React.Component {
     state = {
         input: "Sample",
     }
-    handleInput = (input) => {
-
+    handleInput = (newInput) => {
+        this.setState({ input: newInput.target.value})
     }
     render() {
         return <div>
