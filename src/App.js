@@ -11,7 +11,7 @@ class App extends React.Component {
         email: "john@emailaddress.com",
         phoneNumber: "+1 123-456-789"
       },
-    }
+    };
   }
   onSubmitTask = () => {
     this.setState({
