@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class TextField extends React.Component {
     state = {
-        input = "Sample";
+        input: "Sample",
     }
     handleInput = (input) => {
 
