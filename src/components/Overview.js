@@ -80,7 +80,7 @@ class OverView extends React.Component {
       return <div>
         <GeneralInformation></GeneralInformation>
         <EducationalExperience></EducationalExperience>
-        <PracticalExperience onChange={this.props.handler}></PracticalExperience>
+        <PracticalExperience onChange={this.props.HandlePracticalExperience}></PracticalExperience>
       </div>
     }
 }
