@@ -3,10 +3,13 @@ import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
 class PracticalExperience extends React.Component {
+  handleInput = (newInput) => {
+    this.setState({ input: newInput.target.value})
+  }
   render () {
     return <div>
       <h1>Practical Experience</h1>
-      <TextField fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
+      <TextField onchange={this.handleInput} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
       <TextField fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
       <TextField fieldName="mainTasks" className="main-tasks" labelText="What were the main tasks at your join at that company?"></TextField>
       <DateField fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
