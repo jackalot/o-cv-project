@@ -63,11 +63,24 @@ class GeneralInformation extends React.Component {
   }
 }
 class OverView extends React.Component {
+  constructor (props)
+  {
+    super(props)
+    this.state  = { 
+      practicalExperience: {
+      companyName: "sample company",
+      positionTitle: 'sample position',
+      mainTasks: 'sample main tasks',
+      startDate: '1-31-2000',
+      endDate: '1-31-2000'
+      },
+    }
+  }
     render () {
       return <div>
         <GeneralInformation></GeneralInformation>
         <EducationalExperience></EducationalExperience>
-        <PracticalExperience></PracticalExperience>
+        <PracticalExperience onChange={this.props.handler}></PracticalExperience>
       </div>
     }
 }
