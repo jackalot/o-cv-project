@@ -13,18 +13,11 @@ class App extends React.Component {
       },
     };
   }
-  onSubmitTask = () => {
-    this.setState({
-     generalInformation: {
-       name: document.querySelector('.our-name'),
-
-     }
-    });
-  }
+  
   render() {
     return (
       <div className="App">
-        <form onSubmit={this.onSubmitTask}>
+        <form>
         <OverView></OverView>
         <input type='submit'></input>
         </form>
