@@ -23,13 +23,16 @@ class PracticalExperience extends React.Component {
   handleMainTasks = (newMainTasks) => {
     this.setState({ mainTasks: newMainTasks.target.value})
   }
+  handleStartDate = (newStartDate) => {
+    this.setState({ startDate: newStartDate.target.value})
+  }
   render () {
     return <div>
       <h1>Practical Experience</h1>
       <TextField handler={this.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
       <TextField handler={this.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
       <TextField handler={this.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
-      <DateField fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+      <DateField handler={this.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
       <DateField fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
     </div>
   }
