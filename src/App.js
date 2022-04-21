@@ -13,12 +13,14 @@ class App extends React.Component {
       },
     };
   }
-  
+  handlePracticleExperience = (newPracticalExperience) => {
+    this.setState({ endDate: newPracticalExperience.target.value})
+  }
   render() {
     return (
       <div className="App">
         <form>
-        <OverView></OverView>
+        <OverView HandlePracticalExperience = {this.handlePracticleExperience}></OverView>
         <input type='submit'></input>
         </form>
       </div>
