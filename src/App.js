@@ -21,7 +21,21 @@ class App extends React.Component {
     };
   }
   handlePracticleExperience = (newPracticalExperience) => {
-    this.setState({ endDate: newPracticalExperience.target.value})
+    function handleCompanyName (newCompanyName) {
+      this.setState({ companyName: newCompanyName.target.value})
+    }
+    function handlePositionTitle (newPositionTitle) {
+      this.setState({ positionTitle: newPositionTitle.target.value})
+    }
+    function handleMainTasks (newMainTasks) {
+      this.setState({ mainTasks: newMainTasks.target.value})
+    }
+    function handleStartDate (newStartDate) {
+      this.setState({ startDate: newStartDate.target.value})
+    }
+    function handleEndDate (newEndDate) {
+      this.setState({ endDate: newEndDate.target.value})
+    }
   }
   render() {
     return (
