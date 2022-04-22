@@ -36,6 +36,7 @@ class App extends React.Component {
     function handleEndDate (newEndDate) {
       this.setState({ endDate: newEndDate.target.value})
     }
+    return { handleCompanyName, handlePositionTitle, handleMainTasks, handleStartDate, handleEndDate}
   }
   render() {
     return (
