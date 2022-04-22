@@ -22,7 +22,12 @@ class App extends React.Component {
   }
   handlePracticleExperience = (newPracticalExperience) => {
     function handleCompanyName (newCompanyName) {
-      this.setState({ companyName: newCompanyName.target.value})
+      this.setState({
+        practicalExperience: {
+          ...this.state.practicalExperience,
+          companyName: newCompanyName.target.value
+        }
+        });
     }
     function handlePositionTitle (newPositionTitle) {
       this.setState({ positionTitle: newPositionTitle.target.value})
@@ -38,6 +43,7 @@ class App extends React.Component {
     }
     return { handleCompanyName, handlePositionTitle, handleMainTasks, handleStartDate, handleEndDate}
   }
+  
   render() {
     return (
       <div className="App">
