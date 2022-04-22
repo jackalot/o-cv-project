@@ -11,6 +11,13 @@ class App extends React.Component {
         email: "john@emailaddress.com",
         phoneNumber: "+1 123-456-789"
       },
+      practicalExperience: {
+        companyName: "sample company",
+        positionTitle: 'sample position',
+        mainTasks: 'sample main tasks',
+        startDate: '1-31-2000',
+        endDate: '1-31-2000'
+      },
     };
   }
   handlePracticleExperience = (newPracticalExperience) => {
