@@ -3,17 +3,6 @@ import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
 class PracticalExperience extends React.Component {
-  constructor (props)
-  {
-    super(props)
-    this.state  = { 
-      companyName: "sample company",
-      positionTitle: 'sample position',
-      mainTasks: 'sample main tasks',
-      startDate: '1-31-2000',
-      endDate: '1-31-2000'
-    }
-  }
   handleCompanyName = (newCompanyName) => {
     this.setState({ companyName: newCompanyName.target.value})
   }
