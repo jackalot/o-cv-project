@@ -6,11 +6,11 @@ class PracticalExperience extends React.Component {
   render () {
     return <div>
       <h1>Practical Experience</h1>
-      <TextField handler={this.props.HandlePracticalExperience.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
-      <TextField handler={this.props.HandlePracticalExperience.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
-      <TextField handler={this.props.HandlePracticalExperience.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
-      <DateField handler={this.props.HandlePracticalExperience.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
-      <DateField handler={this.props.HandlePracticalExperience.handleEndDate}fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
+      <TextField handler={this.props.HandlePracticalExperience.callCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
+      <TextField handler={this.props.HandlePracticalExperience.callPositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
+      <TextField handler={this.props.HandlePracticalExperience.callMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
+      <DateField handler={this.props.HandlePracticalExperience.callStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+      <DateField handler={this.props.HandlePracticalExperience.callEndDate}fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
     </div>
   }
 }
@@ -37,11 +37,29 @@ class GeneralInformation extends React.Component {
   }
 }
 class OverView extends React.Component {
+   callHandlePracticalExperience = () => {
+    function callCompanyName (newCompanyName) {
+      this.props.handlePracticleExperience.handleCompanyName(newCompanyName);
+    }
+    function callPositionTitle (newPositionTitle) {
+      this.props.handlePracticleExperience.handlePositionTitle(newPositionTitle);
+    }
+    function callMainTasks (newMainTasks) {
+      this.props.handlePracticleExperience.handleMainTasks(newMainTasks);
+    }
+    function callStartDate (newStartDate) {
+      this.props.handlePracticleExperience.handleMainTasks(newStartDate);
+    }
+    function callEndDate (newEndDate) {
+      this.props.handlePracticleExperience.handleMainTasks(newEndDate);
+    }
+    return { callCompanyName, callPositionTitle, callMainTasks, callStartDate, callEndDate}
+  }
     render () {
       return <div>
         <GeneralInformation></GeneralInformation>
         <EducationalExperience></EducationalExperience>
-        <PracticalExperience HandlePracticalExperience = {this.props.HandlePracticalExperience}></PracticalExperience>
+        <PracticalExperience HandlePracticalExperience = {this.callHandlePracticalExperience}></PracticalExperience>
       </div>
     }
 }
