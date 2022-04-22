@@ -41,7 +41,7 @@ class OverView extends React.Component {
       return <div>
         <GeneralInformation></GeneralInformation>
         <EducationalExperience></EducationalExperience>
-        <PracticalExperience onChange={this.props.HandlePracticalExperience}></PracticalExperience>
+        <PracticalExperience HandlePracticalExperience = {this.props.HandlePracticalExperience}></PracticalExperience>
       </div>
     }
 }
