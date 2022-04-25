@@ -20,15 +20,7 @@ class App extends React.Component {
       },
     };
   }
-  handlePracticleExperience = (newPracticalExperience) => {
-    function handleStartDate (newStartDate) {
-      this.setState({ startDate: newStartDate.target.value})
-    }
-    function handleEndDate (newEndDate) {
-      this.setState({ endDate: newEndDate.target.value})
-    }
-    return { handleStartDate, handleEndDate}
-  }
+
    handleCompanyName = (newCompanyName) => {
     this.setState({
       practicalExperience: {
