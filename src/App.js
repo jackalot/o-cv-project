@@ -21,19 +21,13 @@ class App extends React.Component {
     };
   }
   handlePracticleExperience = (newPracticalExperience) => {
-    function handlePositionTitle (newPositionTitle) {
-      this.setState({ positionTitle: newPositionTitle.target.value})
-    }
-    function handleMainTasks (newMainTasks) {
-      this.setState({ mainTasks: newMainTasks.target.value})
-    }
     function handleStartDate (newStartDate) {
       this.setState({ startDate: newStartDate.target.value})
     }
     function handleEndDate (newEndDate) {
       this.setState({ endDate: newEndDate.target.value})
     }
-    return { handlePositionTitle, handleMainTasks, handleStartDate, handleEndDate}
+    return { handleStartDate, handleEndDate}
   }
    handleCompanyName = (newCompanyName) => {
     this.setState({
@@ -48,6 +42,15 @@ class App extends React.Component {
       positionTitle: {
         ...this.state.practicalExperience,
         companyName: newPositionTitle.target.value
+      }
+      });
+  }
+  handleMainTasks = (newMainTasks) => {
+    this.setState({ mainTasks: newMainTasks.target.value})
+    this.setState({
+      mainTasks: {
+        ...this.state.practicalExperience,
+        companyName: newMainTasks.target.value
       }
       });
   }
