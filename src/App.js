@@ -21,14 +21,6 @@ class App extends React.Component {
     };
   }
   handlePracticleExperience = (newPracticalExperience) => {
-    function handleCompanyName (newCompanyName) {
-      this.setState({
-        practicalExperience: {
-          ...this.state.practicalExperience,
-          companyName: newCompanyName.target.value
-        }
-        });
-    }
     function handlePositionTitle (newPositionTitle) {
       this.setState({ positionTitle: newPositionTitle.target.value})
     }
@@ -41,14 +33,21 @@ class App extends React.Component {
     function handleEndDate (newEndDate) {
       this.setState({ endDate: newEndDate.target.value})
     }
-    return { handleCompanyName, handlePositionTitle, handleMainTasks, handleStartDate, handleEndDate}
+    return { handlePositionTitle, handleMainTasks, handleStartDate, handleEndDate}
   }
-  
+   handleCompanyName = (newCompanyName) => {
+    this.setState({
+      practicalExperience: {
+        ...this.state.practicalExperience,
+        companyName: newCompanyName.target.value
+      }
+      });
+  }
   render() {
     return (
       <div className="App">
         <form>
-        <OverView handleCompanyName = {this.handlePracticleExperience.handleCompanyName}></OverView>
+        <OverView handleCompanyName = {this.handleCompanyName}></OverView>
         <input type='submit'></input>
         </form>
       </div>
