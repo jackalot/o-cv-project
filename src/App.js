@@ -43,6 +43,14 @@ class App extends React.Component {
       }
       });
   }
+   handlePositionTitle = (newPositionTitle) => {
+    this.setState({
+      positionTitle: {
+        ...this.state.practicalExperience,
+        companyName: newPositionTitle.target.value
+      }
+      });
+  }
   render() {
     return (
       <div className="App">
