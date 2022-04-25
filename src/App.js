@@ -46,11 +46,27 @@ class App extends React.Component {
       });
   }
   handleMainTasks = (newMainTasks) => {
-    this.setState({ mainTasks: newMainTasks.target.value})
     this.setState({
       mainTasks: {
         ...this.state.practicalExperience,
         companyName: newMainTasks.target.value
+      }
+      });
+  }
+   handleStartDate = (newStartDate) => {
+    this.setState({
+      startDate: {
+        ...this.state.practicalExperience,
+        companyName: newStartDate.target.value
+      }
+      });
+  }
+   handleEndDate = (newEndDate) => {
+    this.setState({ endDate: newEndDate.target.value})
+    this.setState({
+      endDate: {
+        ...this.state.practicalExperience,
+        companyName: newEndDate.target.value
       }
       });
   }
