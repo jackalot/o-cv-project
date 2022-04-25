@@ -6,11 +6,11 @@ class PracticalExperience extends React.Component {
   render () {
     return <div>
       <h1>Practical Experience</h1>
-      <TextField handler={this.props.HandlePracticalExperience.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
-      <TextField handler={this.props.HandlePracticalExperience.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
-      <TextField handler={this.props.HandlePracticalExperience.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
-      <DateField handler={this.props.HandlePracticalExperience.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
-      <DateField handler={this.props.HandlePracticalExperience.handleEndDate}fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
+      <TextField handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
+      <TextField fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
+      <TextField fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
+      <DateField fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+      <DateField fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
     </div>
   }
 }
@@ -38,10 +38,11 @@ class GeneralInformation extends React.Component {
 }
 class OverView extends React.Component {
     render () {
+      {console.log(this.props)}
       return <div>
         <GeneralInformation></GeneralInformation>
         <EducationalExperience></EducationalExperience>
-        <PracticalExperience HandlePracticalExperience = {this.props.HandlePracticalExperience}></PracticalExperience>
+        <PracticalExperience handleCompanyName = {this.props.handleCompanyName} ></PracticalExperience>
       </div>
     }
 }
