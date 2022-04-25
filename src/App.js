@@ -48,7 +48,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <form>
-        <OverView HandlePracticalExperience = {this.handlePracticleExperience}></OverView>
+        <OverView handleCompanyName = {this.handlePracticleExperience.handleCompanyName}></OverView>
         <input type='submit'></input>
         </form>
       </div>
