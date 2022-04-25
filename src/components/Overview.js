@@ -42,8 +42,12 @@ class OverView extends React.Component {
       return <div>
         <GeneralInformation></GeneralInformation>
         <EducationalExperience></EducationalExperience>
-        <PracticalExperience handleCompanyName = {this.props.handleCompanyName}
-        handlePositionTitle = {this.props.handlePositionTitle} ></PracticalExperience>
+        <PracticalExperience 
+        handleCompanyName = {this.props.handleCompanyName}
+        handlePositionTitle = {this.props.handlePositionTitle}
+        handleMainTasks = {this.props.handleMainTasks}
+        handleStartDate = {this.props.handleStartDate}
+        handleEndDate = {this.props.handleEndDate} ></PracticalExperience>
       </div>
     }
 }
