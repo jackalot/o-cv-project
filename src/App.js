@@ -75,6 +75,8 @@ class App extends React.Component {
         handleCompanyName = {this.handleCompanyName}
         handlePositionTitle = {this.handlePositionTitle}
         handleMainTasks = {this.handleMainTasks}
+        handleStartDate = {this.handleStartDate}
+        handleEndDate = {this.handleEndDate}
         ></OverView>
         <input type='submit'></input>
         </form>
