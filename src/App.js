@@ -71,9 +71,10 @@ class App extends React.Component {
       <div className="App">
         <form>
         <OverView
-        // Practicle Experience
+        /* Practicle Experience */
         handleCompanyName = {this.handleCompanyName}
         handlePositionTitle = {this.handlePositionTitle}
+        handleMainTasks = {this.handleMainTasks}
         ></OverView>
         <input type='submit'></input>
         </form>
