@@ -20,7 +20,7 @@ class App extends React.Component {
       },
     };
   }
-
+  /* Practicle Experience Handle function */
    handleCompanyName = (newCompanyName) => {
     this.setState({
       practicalExperience: {
@@ -29,6 +29,7 @@ class App extends React.Component {
       }
       });
   }
+  /* Practicle Experience Handle function */
    handlePositionTitle = (newPositionTitle) => {
     this.setState({
       positionTitle: {
@@ -37,6 +38,7 @@ class App extends React.Component {
       }
       });
   }
+   /* Practicle Experience Handle function */
   handleMainTasks = (newMainTasks) => {
     this.setState({
       mainTasks: {
@@ -45,6 +47,7 @@ class App extends React.Component {
       }
       });
   }
+   /* Practicle Experience Handle function */
    handleStartDate = (newStartDate) => {
     this.setState({
       startDate: {
@@ -53,6 +56,7 @@ class App extends React.Component {
       }
       });
   }
+   /* Practicle Experience Handle function */
    handleEndDate = (newEndDate) => {
     this.setState({ endDate: newEndDate.target.value})
     this.setState({
@@ -66,7 +70,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <form>
-        <OverView handleCompanyName = {this.handleCompanyName}></OverView>
+        <OverView handleCompanyName = {this.handleCompanyName}
+        handlePositionTitle = {this.handlePositionTitle}
+        ></OverView>
         <input type='submit'></input>
         </form>
       </div>
