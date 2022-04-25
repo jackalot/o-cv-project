@@ -32,27 +32,27 @@ class App extends React.Component {
   /* Practicle Experience Handle function */
    handlePositionTitle = (newPositionTitle) => {
     this.setState({
-      positionTitle: {
+      practicalExperience: {
         ...this.state.practicalExperience,
-        companyName: newPositionTitle.target.value
+        positionTitle: newPositionTitle.target.value
       }
       });
   }
    /* Practicle Experience Handle function */
   handleMainTasks = (newMainTasks) => {
     this.setState({
-      mainTasks: {
+      practicalExperience: {
         ...this.state.practicalExperience,
-        companyName: newMainTasks.target.value
+        mainTasks: newMainTasks.target.value
       }
       });
   }
    /* Practicle Experience Handle function */
    handleStartDate = (newStartDate) => {
     this.setState({
-      startDate: {
+      practicalExperience: {
         ...this.state.practicalExperience,
-        companyName: newStartDate.target.value
+        startDate: newStartDate.target.value
       }
       });
   }
@@ -60,9 +60,9 @@ class App extends React.Component {
    handleEndDate = (newEndDate) => {
     this.setState({ endDate: newEndDate.target.value})
     this.setState({
-      endDate: {
+      practicalExperience: {
         ...this.state.practicalExperience,
-        companyName: newEndDate.target.value
+        endDate: newEndDate.target.value
       }
       });
   }
