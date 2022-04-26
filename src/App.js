@@ -157,7 +157,7 @@ class App extends React.Component {
           handleTitleOfStudy = {this.handleTitleOfStudy}
           handleDateOfStudy = {this.handleDateOfStudy}
           ></OverView>
-          <input type='submit'></input>
+          <input onClick={this.submitInputs} type='submit'></input>
           </form>
         </div>
       );
