@@ -1,4 +1,8 @@
 Focus: render the inputs when submitting now that we store the state of each input:
++ add a new property to the state of app
+{
+    submiting: false,
+}
 + create a new function called submitInputs {
     
 }
