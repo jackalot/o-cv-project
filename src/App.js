@@ -130,6 +130,10 @@ class App extends React.Component {
       <div className="App">
         <form>
         <OverView
+        /* General Information */
+        handleName = {this.handleName}
+        handleEmail = {this.handleEmail}
+        handlePhoneNumber = {this.handlePhoneNumber}
         /* Practical Experience */
         handleCompanyName = {this.handleCompanyName}
         handlePositionTitle = {this.handlePositionTitle}
