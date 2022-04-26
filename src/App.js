@@ -135,29 +135,38 @@ class App extends React.Component {
       });
   }
   render() {
-    return (
-      <div className="App">
-        <form>
-        <OverView
-        /* General Information */
-        handleName = {this.handleName}
-        handleEmail = {this.handleEmail}
-        handlePhoneNumber = {this.handlePhoneNumber}
-        /* Practical Experience */
-        handleCompanyName = {this.handleCompanyName}
-        handlePositionTitle = {this.handlePositionTitle}
-        handleMainTasks = {this.handleMainTasks}
-        handleStartDate = {this.handleStartDate}
-        handleEndDate = {this.handleEndDate}
-        /* Educational Experience */
-        handleSchoolName = {this.handleSchoolName}
-        handleTitleOfStudy = {this.handleTitleOfStudy}
-        handleDateOfStudy = {this.handleDateOfStudy}
-        ></OverView>
-        <input type='submit'></input>
-        </form>
+    if(this.state.submiting === false)
+    {
+      return (
+        <div className="App">
+          <form>
+          <OverView
+          /* General Information */
+          handleName = {this.handleName}
+          handleEmail = {this.handleEmail}
+          handlePhoneNumber = {this.handlePhoneNumber}
+          /* Practical Experience */
+          handleCompanyName = {this.handleCompanyName}
+          handlePositionTitle = {this.handlePositionTitle}
+          handleMainTasks = {this.handleMainTasks}
+          handleStartDate = {this.handleStartDate}
+          handleEndDate = {this.handleEndDate}
+          /* Educational Experience */
+          handleSchoolName = {this.handleSchoolName}
+          handleTitleOfStudy = {this.handleTitleOfStudy}
+          handleDateOfStudy = {this.handleDateOfStudy}
+          ></OverView>
+          <input type='submit'></input>
+          </form>
+        </div>
+      );
+    }
+    else
+    {
+      return  <div className="App">
+        
       </div>
-    );
+    }
   }
 }
 
