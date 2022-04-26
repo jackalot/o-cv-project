@@ -4,5 +4,9 @@ Focus: render the inputs when submitting now that we store the state of each inp
 }
 *+ create a new file called Printview.js
 {
-    
+    create a component called PrintView that extends React.component {
+        // this will call off smaller components for each section,
+        IE: a Practical Experience component and that Practical Experience will
+        render Practical Experience
+    }
 }
