@@ -4,7 +4,7 @@ Focus: render the inputs when submitting now that we store the state of each inp
     submiting: false,
 }
 + create a new function called submitInputs {
-    
+    + set the state of submiting to be true;
 }
 *+ create a new file called Printview.js
 {
