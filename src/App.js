@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import OverView from './components/Overview';
+import PrintView from './components/Printview';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -164,7 +165,7 @@ class App extends React.Component {
     else
     {
       return  <div className="App">
-        
+        <PrintView></PrintView>
       </div>
     }
   }
