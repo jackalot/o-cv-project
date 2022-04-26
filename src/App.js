@@ -43,6 +43,15 @@ class App extends React.Component {
         }
         });
     }
+     /* General Information Handle function */
+     handlePhoneNumber = (newPhoneNumber) => {
+      this.setState({
+        generalInformation: {
+          ...this.state.generalInformation,
+          phoneNumber: newPhoneNumber.target.value
+        }
+        });
+    }
   /* Educational Experience Handle function */
   handleSchoolName = (newSchoolName) => {
     this.setState({
