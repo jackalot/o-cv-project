@@ -34,6 +34,15 @@ class App extends React.Component {
       }
       });
   }
+   /* Educational Experience Handle function */
+   handleTitleOfStudy = (newTitleOfStudy) => {
+    this.setState({
+      educationalExperience: {
+        ...this.state.educationalExperience,
+        titleOfStudy: newTitleOfStudy.target.value
+      }
+      });
+  }
   /* Practical Experience Handle function */
    handleCompanyName = (newCompanyName) => {
     this.setState({
