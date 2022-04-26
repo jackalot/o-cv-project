@@ -25,6 +25,15 @@ class App extends React.Component {
       },
     };
   }
+  /* Educational Experience Handle function */
+  handleSchoolName = (newSchoolName) => {
+    this.setState({
+      educationalExperience: {
+        ...this.state.educationalExperience,
+        schoolName: newSchoolName.target.value
+      }
+      });
+  }
   /* Practical Experience Handle function */
    handleCompanyName = (newCompanyName) => {
     this.setState({
