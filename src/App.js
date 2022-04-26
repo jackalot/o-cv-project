@@ -26,6 +26,14 @@ class App extends React.Component {
       },
     };
   }
+    submitInputs = () => {
+      if(this.state.submiting === false)
+      {
+        this.setState({
+          submiting : true,
+        })
+      }
+    }
     /* General Information Handle function */
     handleName = (newName) => {
       this.setState({
