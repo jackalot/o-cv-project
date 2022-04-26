@@ -14,3 +14,4 @@ Focus: render the inputs when submitting now that we store the state of each inp
         render Practical Experience
     }
 }
++ atatch submitInputs to the submit button
