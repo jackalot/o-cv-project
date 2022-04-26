@@ -32,7 +32,7 @@ class GeneralInformation extends React.Component {
        <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
        <input onClick={this.props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
        <label htmlFor="phoneNumber">Please enter a phone number</label>
-        <input className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
+        <input onClick={this.props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
     </div>
   }
 }
