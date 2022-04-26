@@ -40,7 +40,11 @@ class OverView extends React.Component {
     render () {
       {console.log(this.props)}
       return <div>
-        <GeneralInformation></GeneralInformation>
+        <GeneralInformation
+        handleName = {this.props.handleName}
+        handleEmail = {this.props.handleEmail}
+        handlePhoneNumber = {this.props.handlePhoneNumber}
+        ></GeneralInformation>
         <EducationalExperience
          handleSchoolName = {this.props.handleSchoolName}
          handleTitleOfStudy = {this.props.handleTitleOfStudy}
