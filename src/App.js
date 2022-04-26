@@ -34,6 +34,15 @@ class App extends React.Component {
         }
         });
     }
+     /* General Information Handle function */
+     handleEmail = (newEmail) => {
+      this.setState({
+        generalInformation: {
+          ...this.state.generalInformation,
+          email: newEmail.target.value
+        }
+        });
+    }
   /* Educational Experience Handle function */
   handleSchoolName = (newSchoolName) => {
     this.setState({
