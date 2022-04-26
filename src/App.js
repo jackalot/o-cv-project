@@ -6,6 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      submiting: false,
       generalInformation: {
         name: "John",
         email: "john@emailaddress.com",
