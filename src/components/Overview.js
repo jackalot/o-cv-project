@@ -28,7 +28,7 @@ class GeneralInformation extends React.Component {
   render () {
     return <div>
       <h1>General Information</h1>
-       <TextField fieldName="name" className="our-name" labelText="What is your name?"></TextField>
+       <TextField handler={this.props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
        <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
        <input className="your-email" id="yourEmail" type='email'></input>
        <label htmlFor="phoneNumber">Please enter a phone number</label>
