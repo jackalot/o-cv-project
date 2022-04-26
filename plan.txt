@@ -1,1 +1,4 @@
 Focus: render the inputs when submitting now that we store the state of each input:
++ create a new function called submitInputs {
+    
+}
