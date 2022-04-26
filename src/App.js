@@ -109,6 +109,10 @@ class App extends React.Component {
         handleMainTasks = {this.handleMainTasks}
         handleStartDate = {this.handleStartDate}
         handleEndDate = {this.handleEndDate}
+        /* Educational Experience */
+        handleSchoolName = {this.handleSchoolName}
+        handleTitleOfStudy = {this.handleTitleOfStudy}
+        handleDateOfStudy = {this.handleDateOfStudy}
         ></OverView>
         <input type='submit'></input>
         </form>
