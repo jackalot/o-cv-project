@@ -25,6 +25,15 @@ class App extends React.Component {
       },
     };
   }
+    /* General Information Handle function */
+    handleName = (newName) => {
+      this.setState({
+        generalInformation: {
+          ...this.state.generalInformation,
+          name: newName.target.value
+        }
+        });
+    }
   /* Educational Experience Handle function */
   handleSchoolName = (newSchoolName) => {
     this.setState({
