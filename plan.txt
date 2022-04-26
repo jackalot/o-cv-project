@@ -1,5 +1,1 @@
-Focus: Allow the inputs to be submitted:
-// While testing with the practical experience company name field
-* The practical experience component gets a new state.
-X The TextField component itself doesn't change state.
-X The Overview component doesn't change state
+Focus: render the inputs when submitting now that we store the state of each input:
