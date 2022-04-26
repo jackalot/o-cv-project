@@ -25,7 +25,7 @@ class App extends React.Component {
       },
     };
   }
-  /* Practicle Experience Handle function */
+  /* Practical Experience Handle function */
    handleCompanyName = (newCompanyName) => {
     this.setState({
       practicalExperience: {
@@ -34,7 +34,7 @@ class App extends React.Component {
       }
       });
   }
-  /* Practicle Experience Handle function */
+  /* Practical Experience Handle function */
    handlePositionTitle = (newPositionTitle) => {
     this.setState({
       practicalExperience: {
@@ -43,7 +43,7 @@ class App extends React.Component {
       }
       });
   }
-   /* Practicle Experience Handle function */
+   /* Practical Experience Handle function */
   handleMainTasks = (newMainTasks) => {
     this.setState({
       practicalExperience: {
@@ -52,7 +52,7 @@ class App extends React.Component {
       }
       });
   }
-   /* Practicle Experience Handle function */
+   /* Practical Experience Handle function */
    handleStartDate = (newStartDate) => {
     this.setState({
       practicalExperience: {
@@ -61,7 +61,7 @@ class App extends React.Component {
       }
       });
   }
-   /* Practicle Experience Handle function */
+   /* Practical Experience Handle function */
    handleEndDate = (newEndDate) => {
     this.setState({ endDate: newEndDate.target.value})
     this.setState({
@@ -76,7 +76,7 @@ class App extends React.Component {
       <div className="App">
         <form>
         <OverView
-        /* Practicle Experience */
+        /* Practical Experience */
         handleCompanyName = {this.handleCompanyName}
         handlePositionTitle = {this.handlePositionTitle}
         handleMainTasks = {this.handleMainTasks}
