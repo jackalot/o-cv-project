@@ -11,7 +11,9 @@ class EducationalExperience extends React.Component {
 class PrintView extends React.Component {
     render() {
         return <div>
-            
+            <GeneralInformation></GeneralInformation>
+            <PracticalExperience></PracticalExperience>
+            <EducationalExperience></EducationalExperience>
         </div>
     }
 }
