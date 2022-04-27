@@ -165,7 +165,9 @@ class App extends React.Component {
     else
     {
       return  <div className="App">
-        <PrintView></PrintView>
+        <PrintView
+        generalInformation = {this.state.generalInformation}
+         ></PrintView>
       </div>
     }
   }
