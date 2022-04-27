@@ -23,7 +23,7 @@ class GeneralInformation extends React.Component {
         else
         {
             return <div>
-                
+
             </div>
         }
     }
@@ -59,6 +59,10 @@ class PrintView extends React.Component {
         return <div>
             <GeneralInformation
             generalInformation = {this.props.generalInformation}
+            /* For editing General Information */
+            handleName = {this.props.handleName}
+            handleEmail = {this.props.handleEmail}
+            handlePhoneNumber = {this.props.handlePhoneNumber}
             ></GeneralInformation>
             <EducationalExperience
              educationalExperience = {this.props.educationalExperience}
