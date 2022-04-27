@@ -13,7 +13,9 @@ class GeneralInformation extends React.Component {
 }
 class EducationalExperience extends React.Component {
     render() {
-        return <h1>Educational Experience</h1>
+        return <div>
+        <h1>Educational Experience</h1>
+        </div>
     }
 }
 class PracticalExperience extends React.Component {
