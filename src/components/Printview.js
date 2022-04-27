@@ -60,6 +60,29 @@ class GeneralInformation extends React.Component {
     }
 }
 class EducationalExperience extends React.Component {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            editing: false,
+        }
+    }
+    startEditing = () => {
+        if(this.state.editing === false)
+        {
+            this.setState({
+                editing : true,
+            })
+        }
+    }
+    stopEditing = () => {
+        if(this.state.editing === true)
+        {
+            this.setState({
+                editing : false,
+            })
+        }
+    }
     render() {
         return <div>
         <h1>Educational Experience</h1>
