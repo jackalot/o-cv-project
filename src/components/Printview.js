@@ -1,8 +1,10 @@
 import React from 'react';
 class GeneralInformation extends React.Component {
+
     render() {
        return <div>
            <h1>General Information</h1>
+           <button>Edit Section</button>
            <ul>
                <li>Name: {this.props.generalInformation.name}</li>
                <li>Email: {this.props.generalInformation.email}</li>
