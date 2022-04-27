@@ -1,7 +1,9 @@
 import React from 'react';
 class GeneralInformation extends React.Component {
     render() {
-       return <h1>General Information</h1>
+       return <div>
+           <h1>General Information</h1>
+           </div>
     }
 }
 class EducationalExperience extends React.Component {
