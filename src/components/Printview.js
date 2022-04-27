@@ -147,7 +147,13 @@ class PrintView extends React.Component {
              handleDateOfStudy = {this.props.handleDateOfStudy}>
             ></EducationalExperience>
             <PracticalExperience
-            practicalExperience = {this.props.practicalExperience}></PracticalExperience>
+            practicalExperience = {this.props.practicalExperience}
+            /* For Editing Practical Experience */
+            handleCompanyName = {this.props.handleCompanyName}
+            handlePositionTitle = {this.props.handlePositionTitle}
+            handleMainTasks = {this.props.handleMainTasks}
+            handleStartDate = {this.props.handleStartDate}
+            handleEndDate = {this.props.handleEndDate}></PracticalExperience>
         </div>
     }
 }
