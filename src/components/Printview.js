@@ -17,7 +17,9 @@ class PracticalExperience extends React.Component {
 class PrintView extends React.Component {
     render() {
         return <div>
-            <GeneralInformation></GeneralInformation>
+            <GeneralInformation
+            generalInformation = {this.props.generalInformation}
+            ></GeneralInformation>
             <EducationalExperience></EducationalExperience>
             <PracticalExperience></PracticalExperience>
         </div>
