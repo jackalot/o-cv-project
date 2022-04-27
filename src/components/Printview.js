@@ -17,6 +17,14 @@ class GeneralInformation extends React.Component {
             })
         }
     }
+    stopEditing = () => {
+        if(this.state.editing === true)
+        {
+            this.setState({
+                editing : false,
+            })
+        }
+    }
     render() {
         if(this.state.editing === false)
         {
@@ -46,6 +54,7 @@ class GeneralInformation extends React.Component {
                 <input onChange={this.props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
                 <label htmlFor="phoneNumber">Please enter a phone number</label>
                 <input onChange={this.props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
+                <button onClick={this.stopEditing}>Submit Changes</button>
             </div>
         }
     }
