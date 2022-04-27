@@ -1,1 +1,1 @@
-Focus: allow the user to be able to create many main tasks for the Practical Experience segment:
+Focus: add an edit button to each segment, then allow us to get new values for that segment
