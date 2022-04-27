@@ -25,7 +25,16 @@ class EducationalExperience extends React.Component {
 }
 class PracticalExperience extends React.Component {
     render() {
-        return <h1>Practical Experience</h1>
+        return <div>
+            <h1>Practical Experience</h1>
+            <ul>
+               <li>Company Name: {this.props.practicalExperience.companyName}</li>
+               <li>Position Title: {this.props.practicalExperience.positionTitle}</li>
+               <li>Main Tasks: {this.props.practicalExperience.mainTasks}</li>
+               <li>Start Date: {this.props.practicalExperience.startDate}</li>
+               <li>End Date: {this.props.practicalExperience.endDate}</li>
+            </ul>
+        </div>
     }
 }
 class PrintView extends React.Component {
