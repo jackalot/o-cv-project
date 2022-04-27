@@ -9,12 +9,20 @@ class GeneralInformation extends React.Component {
             editing: false,
         }
     }
+    startEditing = () => {
+        if(this.state.editing === false)
+        {
+            this.setState({
+                editing : true,
+            })
+        }
+    }
     render() {
         if(this.state.editing === false)
         {
             return <div>
                 <h1>General Information</h1>
-                <button>Edit Section</button>
+                <button onClick={this.startEditing}>Edit Section</button>
                 <ul>
                     <li>Name: {this.props.generalInformation.name}</li>
                     <li>Email: {this.props.generalInformation.email}</li>
