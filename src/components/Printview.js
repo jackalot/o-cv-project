@@ -27,7 +27,9 @@ class PrintView extends React.Component {
             <GeneralInformation
             generalInformation = {this.props.generalInformation}
             ></GeneralInformation>
-            <EducationalExperience></EducationalExperience>
+            <EducationalExperience
+             educationalExperience = {this.props.educationalExperience}
+            ></EducationalExperience>
             <PracticalExperience></PracticalExperience>
         </div>
     }
