@@ -116,6 +116,13 @@ class EducationalExperience extends React.Component {
     }
 }
 class PracticalExperience extends React.Component {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            editing: false,
+        }
+    }
     render() {
         return <div>
             <h1>Practical Experience</h1>
