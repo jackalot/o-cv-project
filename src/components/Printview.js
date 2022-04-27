@@ -5,6 +5,8 @@ class GeneralInformation extends React.Component {
            <h1>General Information</h1>
            <ul>
                <li>Name: {this.props.generalInformation.name}</li>
+               <li>Email: {this.props.generalInformation.email}</li>
+               <li>Name: {this.props.generalInformation.phoneNumber}</li>
            </ul>
            </div>
     }
