@@ -140,6 +140,8 @@ class PracticalExperience extends React.Component {
         }
     }
     render() {
+        if(this.state.editing === false)
+        {
         return <div>
             <h1>Practical Experience</h1>
             <ul>
@@ -150,6 +152,11 @@ class PracticalExperience extends React.Component {
                <li>End Date: {this.props.practicalExperience.endDate}</li>
             </ul>
         </div>
+        }
+        else
+        {
+            
+        }
     }
 }
 class PrintView extends React.Component {
