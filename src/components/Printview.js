@@ -157,12 +157,20 @@ class PracticalExperience extends React.Component {
         else
         {
             return <div>
-                  <h1>Practical Experience</h1>
-      <TextField handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
-      <TextField handler={this.props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
-      <TextField handler={this.props.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
-      <DateField handler={this.props.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
-      <DateField handler={this.props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
+                <h1>Practical Experience</h1>
+                <ul>
+                    <li>Old Info</li>
+                   <li>Company Name: {this.props.practicalExperience.companyName}</li>
+                   <li>Position Title: {this.props.practicalExperience.positionTitle}</li>
+                   <li>Main Tasks: {this.props.practicalExperience.mainTasks}</li>
+                   <li>Start Date: {this.props.practicalExperience.startDate}</li>
+                   <li>End Date: {this.props.practicalExperience.endDate}</li>
+                </ul>
+                <TextField handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
+                <TextField handler={this.props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
+                <TextField handler={this.props.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
+                <DateField handler={this.props.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+                <DateField handler={this.props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
             </div>
         }
     }
