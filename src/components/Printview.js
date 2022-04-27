@@ -20,6 +20,12 @@ class GeneralInformation extends React.Component {
                 </ul>
                 </div>
         }
+        else
+        {
+            return <div>
+                
+            </div>
+        }
     }
 }
 class EducationalExperience extends React.Component {
