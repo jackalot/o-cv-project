@@ -100,9 +100,11 @@ class EducationalExperience extends React.Component {
         {
             return <div>
                 <h1>Educational Experience</h1>
+                <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
                 <TextField handler={this.props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
                 <TextField handler={this.props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
                 <DateField handler={this.props.handleDateOfStudy} fieldName="dateOfStudy" className="study-date" labelText="When did you study here?"></DateField>
+                <button onClick={this.stopEditing}>Submit Changes</button>
             </div>
         }
     }
