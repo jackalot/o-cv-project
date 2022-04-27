@@ -173,6 +173,16 @@ class App extends React.Component {
         handleName = {this.handleName}
         handleEmail = {this.handleEmail}
         handlePhoneNumber = {this.handlePhoneNumber}
+        /* Practical Experience */
+        handleCompanyName = {this.handleCompanyName}
+        handlePositionTitle = {this.handlePositionTitle}
+        handleMainTasks = {this.handleMainTasks}
+        handleStartDate = {this.handleStartDate}
+        handleEndDate = {this.handleEndDate}
+        /* Educational Experience */
+        handleSchoolName = {this.handleSchoolName}
+        handleTitleOfStudy = {this.handleTitleOfStudy}
+        handleDateOfStudy = {this.handleDateOfStudy}
          ></PrintView>
       </div>
     }
