@@ -123,6 +123,22 @@ class PracticalExperience extends React.Component {
             editing: false,
         }
     }
+    startEditing = () => {
+        if(this.state.editing === false)
+        {
+            this.setState({
+                editing : true,
+            })
+        }
+    }
+    stopEditing = () => {
+        if(this.state.editing === true)
+        {
+            this.setState({
+                editing : false,
+            })
+        }
+    }
     render() {
         return <div>
             <h1>Practical Experience</h1>
