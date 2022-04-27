@@ -8,4 +8,4 @@ class AddRemoveButton extends React.Component {
         </div>
     }
 }
-export default TextField;
+export default AddRemoveButton;
