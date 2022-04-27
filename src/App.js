@@ -168,6 +168,7 @@ class App extends React.Component {
         <PrintView
         generalInformation = {this.state.generalInformation}
         educationalExperience = {this.state.educationalExperience}
+        practicalExperience = {this.state.practicalExperience}
          ></PrintView>
       </div>
     }
