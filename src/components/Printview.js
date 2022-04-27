@@ -142,20 +142,21 @@ class PracticalExperience extends React.Component {
     render() {
         if(this.state.editing === false)
         {
-        return <div>
-            <h1>Practical Experience</h1>
-            <ul>
-               <li>Company Name: {this.props.practicalExperience.companyName}</li>
-               <li>Position Title: {this.props.practicalExperience.positionTitle}</li>
-               <li>Main Tasks: {this.props.practicalExperience.mainTasks}</li>
-               <li>Start Date: {this.props.practicalExperience.startDate}</li>
-               <li>End Date: {this.props.practicalExperience.endDate}</li>
-            </ul>
-        </div>
+            return <div>
+                <h1>Practical Experience</h1>
+                <button onClick={this.startEditing}>Edit Section</button>
+                <ul>
+                   <li>Company Name: {this.props.practicalExperience.companyName}</li>
+                   <li>Position Title: {this.props.practicalExperience.positionTitle}</li>
+                   <li>Main Tasks: {this.props.practicalExperience.mainTasks}</li>
+                   <li>Start Date: {this.props.practicalExperience.startDate}</li>
+                   <li>End Date: {this.props.practicalExperience.endDate}</li>
+                </ul>
+            </div>
         }
         else
         {
-            
+
         }
     }
 }
