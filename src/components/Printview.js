@@ -3,6 +3,9 @@ class GeneralInformation extends React.Component {
     render() {
        return <div>
            <h1>General Information</h1>
+           <ul>
+               <li>Name: {this.props.generalInformation.name}</li>
+           </ul>
            </div>
     }
 }
