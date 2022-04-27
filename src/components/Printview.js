@@ -84,15 +84,22 @@ class EducationalExperience extends React.Component {
         }
     }
     render() {
-        return <div>
-        <h1>Educational Experience</h1>
-        <button onClick={this.startEditing}>Edit Section</button>
-        <ul>
-               <li>School Name: {this.props.educationalExperience.schoolName}</li>
-               <li>Title of Study: {this.props.educationalExperience.titleOfStudy}</li>
-               <li>Date Of Study: {this.props.educationalExperience.dateOfStudy}</li>
-        </ul>
-        </div>
+        if(this.state.editing === false)
+        {
+            return <div>
+            <h1>Educational Experience</h1>
+            <button onClick={this.startEditing}>Edit Section</button>
+            <ul>
+                   <li>School Name: {this.props.educationalExperience.schoolName}</li>
+                   <li>Title of Study: {this.props.educationalExperience.titleOfStudy}</li>
+                   <li>Date Of Study: {this.props.educationalExperience.dateOfStudy}</li>
+            </ul>
+            </div>
+        }
+        else
+        {
+            
+        }
     }
 }
 class PracticalExperience extends React.Component {
