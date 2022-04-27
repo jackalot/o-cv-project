@@ -169,6 +169,10 @@ class App extends React.Component {
         generalInformation = {this.state.generalInformation}
         educationalExperience = {this.state.educationalExperience}
         practicalExperience = {this.state.practicalExperience}
+        /* General Information */
+        handleName = {this.handleName}
+        handleEmail = {this.handleEmail}
+        handlePhoneNumber = {this.handlePhoneNumber}
          ></PrintView>
       </div>
     }
