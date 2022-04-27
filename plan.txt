@@ -1,17 +1,1 @@
-Focus: render the inputs when submitting now that we store the state of each input:
-+ add a new property to the state of app
-{
-    submiting: false,
-}
-+ create a new function called submitInputs {
-    + set the state of submiting to be true;
-}
-*+ create a new file called Printview.js
-{
-    create a component called PrintView that extends React.component {
-        // this will call off smaller components for each section,
-        IE: a Practical Experience component and that Practical Experience will
-        render Practical Experience
-    }
-}
-+ attatch submitInputs to the submit button
+Focus: allow the user to be able to create many main tasks for the Practical Experience segment:
