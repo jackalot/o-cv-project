@@ -100,6 +100,12 @@ class EducationalExperience extends React.Component {
         {
             return <div>
                 <h1>Educational Experience</h1>
+                <ul>
+                    <li>Old Info</li>
+                   <li>School Name: {this.props.educationalExperience.schoolName}</li>
+                   <li>Title of Study: {this.props.educationalExperience.titleOfStudy}</li>
+                   <li>Date Of Study: {this.props.educationalExperience.dateOfStudy}</li>
+                </ul>
                 <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
                 <TextField handler={this.props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
                 <TextField handler={this.props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
