@@ -4,19 +4,22 @@ class GeneralInformation extends React.Component {
     {
         super(props);
         this.state = {
-
+            editing: false,
         }
     }
     render() {
-       return <div>
-           <h1>General Information</h1>
-           <button>Edit Section</button>
-           <ul>
-               <li>Name: {this.props.generalInformation.name}</li>
-               <li>Email: {this.props.generalInformation.email}</li>
-               <li>Name: {this.props.generalInformation.phoneNumber}</li>
-           </ul>
-           </div>
+        if(this.state.editing === false)
+        {
+            return <div>
+                <h1>General Information</h1>
+                <button>Edit Section</button>
+                <ul>
+                    <li>Name: {this.props.generalInformation.name}</li>
+                    <li>Email: {this.props.generalInformation.email}</li>
+                    <li>Name: {this.props.generalInformation.phoneNumber}</li>
+                </ul>
+                </div>
+        }
     }
 }
 class EducationalExperience extends React.Component {
