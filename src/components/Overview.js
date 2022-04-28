@@ -16,7 +16,7 @@ class PracticalExperience extends React.Component {
 }
 class EducationalExperience extends React.Component {
   render () {
-    return <div>
+    return <div className="OverView-EducationalExperience">
       <h1>Educational Experience</h1>
       <TextField handler={this.props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
       <TextField handler={this.props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
