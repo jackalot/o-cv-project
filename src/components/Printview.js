@@ -142,7 +142,7 @@ class PracticalExperience extends React.Component {
     render() {
         if(this.state.editing === false)
         {
-            return <div>
+            return <div className='PrintView-PracticalExperience-List'>
                 <h1>Practical Experience</h1>
                 <button onClick={this.startEditing}>Edit Section</button>
                 <ul>
