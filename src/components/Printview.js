@@ -2,6 +2,8 @@ import React from 'react';
 import DateField from "./DateField";
 import TextField from "./TextField";
 import '../styles/Views.css';
+import '../styles/Lists.css';
+import '../styles/Edits.css';
 class GeneralInformation extends React.Component {
     constructor(props)
     {
