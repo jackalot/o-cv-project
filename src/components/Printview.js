@@ -179,7 +179,7 @@ class PracticalExperience extends React.Component {
 }
 class PrintView extends React.Component {
     render() {
-        return <div>
+        return <div className='PrintView'>
             <GeneralInformation
             generalInformation = {this.props.generalInformation}
             /* For editing General Information */
