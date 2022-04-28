@@ -167,11 +167,11 @@ class PracticalExperience extends React.Component {
                    <li>End Date: {this.props.practicalExperience.endDate}</li>
                 </ul>
                 <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
-                <TextField handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
-                <TextField handler={this.props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
-                <TextField handler={this.props.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
-                <DateField handler={this.props.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
-                <DateField handler={this.props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
+                <TextField defaultValue={this.props.practicalExperience.companyName} handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
+                <TextField defaultValue={this.props.practicalExperience.positionTitle} handler={this.props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
+                <TextField defaultValue={this.props.practicalExperience.mainTasks} handler={this.props.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
+                <DateField defaultValue={this.props.practicalExperience.startDate} handler={this.props.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+                <DateField defaultValue={this.props.practicalExperience.endDate} handler={this.props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
                 <button onClick={this.stopEditing}>Submit Changes</button>
             </div>
         }
