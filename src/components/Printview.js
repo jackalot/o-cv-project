@@ -40,7 +40,7 @@ class GeneralInformation extends React.Component {
         }
         else
         {
-            return <div>
+            return <div className='PrintView-GeneralInformation-Edit'>
                  <h1>General Information</h1>
                  <ul>
                      <li>Old Info</li>
