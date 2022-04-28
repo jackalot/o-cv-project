@@ -98,7 +98,7 @@ class EducationalExperience extends React.Component {
         }
         else
         {
-            return <div>
+            return <div className='PrintView-EducationalExperience-Edit'>
                 <h1>Educational Experience</h1>
                 <ul>
                     <li>Old Info</li>
