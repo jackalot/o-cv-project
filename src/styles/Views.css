@@ -1,5 +1,9 @@
 .PrintView {
-    background-color: brown;
+    border-style: solid;
+    border-color: #8b4513;
+    border-radius: 20px;
+    border-width: 14px;
+    background-color: #6af3f3;
 }
 .OverView {
     background-color: green;
