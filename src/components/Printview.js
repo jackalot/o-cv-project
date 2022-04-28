@@ -46,7 +46,7 @@ class GeneralInformation extends React.Component {
                      <li>Old Info</li>
                     <li>Name: {this.props.generalInformation.name}</li>
                     <li>Email: {this.props.generalInformation.email}</li>
-                    <li>Name: {this.props.generalInformation.phoneNumber}</li>
+                    <li>Phone Number: {this.props.generalInformation.phoneNumber}</li>
                 </ul>
                 <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
                 <TextField defaultValue={this.props.generalInformation.name} handler={this.props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
