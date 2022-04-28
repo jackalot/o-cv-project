@@ -34,7 +34,7 @@ class GeneralInformation extends React.Component {
                 <ul>
                     <li>Name: {this.props.generalInformation.name}</li>
                     <li>Email: {this.props.generalInformation.email}</li>
-                    <li>Name: {this.props.generalInformation.phoneNumber}</li>
+                    <li>Phone Number: {this.props.generalInformation.phoneNumber}</li>
                 </ul>
                 </div>
         }
