@@ -4,7 +4,7 @@ import DateField from "./DateField";
 import TextField from "./TextField";
 class PracticalExperience extends React.Component {
   render () {
-    return <div>
+    return <div className="OverView-PracticalExperience">
       <h1>Practical Experience</h1>
       <TextField handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
       <TextField handler={this.props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
