@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NumberField from "./NumberField";
 import DateField from "./DateField";
 import TextField from "./TextField";
+import '../styles/Views.css';
 class PracticalExperience extends React.Component {
   render () {
     return <div className="OverView-PracticalExperience">
