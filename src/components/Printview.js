@@ -49,11 +49,11 @@ class GeneralInformation extends React.Component {
                     <li>Name: {this.props.generalInformation.phoneNumber}</li>
                 </ul>
                 <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
-                <TextField handler={this.props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
+                <TextField defaultValue={this.props.generalInformation.name} handler={this.props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
                 <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
-                <input onChange={this.props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
+                <input defaultValue={this.props.generalInformation.email} onChange={this.props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
                 <label htmlFor="phoneNumber">Please enter a phone number</label>
-                <input onChange={this.props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
+                <input defaultValue={this.props.generalInformation.phoneNumber} onChange={this.props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
                 <button onClick={this.stopEditing}>Submit Changes</button>
             </div>
         }
