@@ -38,7 +38,7 @@ class GeneralInformation extends React.Component {
 }
 class OverView extends React.Component {
     render () {
-      return <div>
+      return <div className="OverView">
         <GeneralInformation
         handleName = {this.props.handleName}
         handleEmail = {this.props.handleEmail}
