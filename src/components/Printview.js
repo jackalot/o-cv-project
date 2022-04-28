@@ -156,7 +156,7 @@ class PracticalExperience extends React.Component {
         }
         else
         {
-            return <div>
+            return <div className='PrintView-PracticalExperience-Edit'>
                 <h1>Practical Experience</h1>
                 <ul>
                     <li>Old Info</li>
