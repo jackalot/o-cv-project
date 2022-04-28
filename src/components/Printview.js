@@ -28,7 +28,7 @@ class GeneralInformation extends React.Component {
     render() {
         if(this.state.editing === false)
         {
-            return <div>
+            return <div className='PrintView-GeneralInformation-List'>
                 <h1>General Information</h1>
                 <button onClick={this.startEditing}>Edit Section</button>
                 <ul>
