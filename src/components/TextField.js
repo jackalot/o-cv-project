@@ -7,7 +7,7 @@ class TextField extends React.Component {
         {
             return <div>
                 <label htmlFor={this.props.fieldName}>{this.props.labelText}</label>
-                <input onChange={this.props.handler} className={this.props.className} id={this.props.fieldName} type='text'></input>
+                <input onChange={this.props.handler} className={this.props.className} id={this.props.fieldName} defaultValue={this.props.defaultValue} type='text'></input>
             </div>
         }
     }
