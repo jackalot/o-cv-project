@@ -86,7 +86,7 @@ class EducationalExperience extends React.Component {
     render() {
         if(this.state.editing === false)
         {
-            return <div>
+            return <div className='PrintView-EducationalExperience-List'>
             <h1>Educational Experience</h1>
             <button onClick={this.startEditing}>Edit Section</button>
             <ul>
