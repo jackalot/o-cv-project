@@ -26,7 +26,7 @@ class EducationalExperience extends React.Component {
 }
 class GeneralInformation extends React.Component {
   render () {
-    return <div>
+    return <div className="OverView-GeneralInformation">
       <h1>General Information</h1>
        <TextField handler={this.props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
        <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
