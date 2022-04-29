@@ -6,8 +6,16 @@
  margin-right: auto;
 }
 .PrintView-EducationalExperience-Edit {
-
+ display: flex;
+ flex-direction: column;
+ width: max-content;
+ margin-left: auto;
+ margin-right: auto;
 }
 .PrintView-PracticalExperience-Edit {
-    
+ display: flex;
+ flex-direction: column;
+ width: max-content;
+ margin-left: auto;
+ margin-right: auto;
 }
