@@ -4,6 +4,7 @@
  width: max-content;
  margin-left: auto;
  margin-right: auto;
+ background-color: #56e3e3;
 }
 .PrintView-EducationalExperience-Edit {
  display: flex;
@@ -11,6 +12,7 @@
  width: max-content;
  margin-left: auto;
  margin-right: auto;
+ background-color: #56e3e3;
 }
 .PrintView-PracticalExperience-Edit {
  display: flex;
@@ -18,4 +20,5 @@
  width: max-content;
  margin-left: auto;
  margin-right: auto;
+ background-color: #56e3e3;
 }
