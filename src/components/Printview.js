@@ -4,63 +4,50 @@ import TextField from "./TextField";
 import '../styles/Views.css';
 import '../styles/Lists.css';
 import '../styles/Edits.css';
-class GeneralInformation extends React.Component {
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            editing: false,
-        }
-    }
-    startEditing = () => {
-        if(this.state.editing === false)
+function GeneralInformation (props) {
+    const [editing, setEditing] = useState(false);
+    function changeEditing () {
+        if(editing === false)
         {
-            this.setState({
-                editing : true,
-            })
-        }
-    }
-    stopEditing = () => {
-        if(this.state.editing === true)
-        {
-            this.setState({
-                editing : false,
-            })
-        }
-    }
-    render() {
-        if(this.state.editing === false)
-        {
-            return <div className='PrintView-GeneralInformation-List'>
-                <h1>General Information</h1>
-                <button onClick={this.startEditing}>Edit Section</button>
-                <ul>
-                    <li>Name: {this.props.generalInformation.name}</li>
-                    <li>Email: {this.props.generalInformation.email}</li>
-                    <li>Phone Number: {this.props.generalInformation.phoneNumber}</li>
-                </ul>
-                </div>
+            setEditing(true);
         }
         else
         {
-            return <div className='PrintView-GeneralInformation-Edit'>
-                 <h1>General Information</h1>
-                 <ul>
-                     <li>Old Info</li>
-                    <li>Name: {this.props.generalInformation.name}</li>
-                    <li>Email: {this.props.generalInformation.email}</li>
-                    <li>Phone Number: {this.props.generalInformation.phoneNumber}</li>
-                </ul>
-                <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
-                <TextField defaultValue={this.props.generalInformation.name} handler={this.props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
-                <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
-                <input defaultValue={this.props.generalInformation.email} onChange={this.props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
-                <label htmlFor="phoneNumber">Please enter a phone number</label>
-                <input defaultValue={this.props.generalInformation.phoneNumber} onChange={this.props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
-                <button onClick={this.stopEditing}>Submit Changes</button>
-            </div>
+            setEditing(false);
         }
     }
+    if(state.editing === false)
+    {
+        return <div className='PrintView-GeneralInformation-List'>
+            <h1>General Information</h1>
+            <button onClick={changeEditing}>Edit Section</button>
+            <ul>
+                <li>Name: {props.generalInformation.name}</li>
+                <li>Email: {props.generalInformation.email}</li>
+                <li>Phone Number: {props.generalInformation.phoneNumber}</li>
+            </ul>
+            </div>
+    }
+    else
+    {
+        return <div className='PrintView-GeneralInformation-Edit'>
+             <h1>General Information</h1>
+             <ul>
+                 <li>Old Info</li>
+                <li>Name: {props.generalInformation.name}</li>
+                <li>Email: {props.generalInformation.email}</li>
+                <li>Phone Number: {props.generalInformation.phoneNumber}</li>
+            </ul>
+            <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
+            <TextField defaultValue={props.generalInformation.name} handler={props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
+            <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
+            <input defaultValue={props.generalInformation.email} onChange={props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
+            <label htmlFor="phoneNumber">Please enter a phone number</label>
+            <input defaultValue={props.generalInformation.phoneNumber} onChange={props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
+            <button onClick={changeEditing}>Submit Changes</button>
+        </div>
+    }
+
 }
 class EducationalExperience extends React.Component {
     constructor(props)
