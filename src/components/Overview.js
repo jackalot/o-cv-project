@@ -32,25 +32,25 @@ function GeneralInformation (props) {
     <input onChange={props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
   </div>
 }
-class OverView extends React.Component {
-    render () {
-      return <div className="OverView">
+function OverView (props) 
+{
+  return <div className="OverView">
         <GeneralInformation
-        handleName = {this.props.handleName}
-        handleEmail = {this.props.handleEmail}
-        handlePhoneNumber = {this.props.handlePhoneNumber}
+        handleName = {props.handleName}
+        handleEmail = {props.handleEmail}
+        handlePhoneNumber = {props.handlePhoneNumber}
         ></GeneralInformation>
         <EducationalExperience
-         handleSchoolName = {this.props.handleSchoolName}
-         handleTitleOfStudy = {this.props.handleTitleOfStudy}
-         handleDateOfStudy = {this.props.handleDateOfStudy}></EducationalExperience>
+         handleSchoolName = {props.handleSchoolName}
+         handleTitleOfStudy = {props.handleTitleOfStudy}
+         handleDateOfStudy = {props.handleDateOfStudy}></EducationalExperience>
         <PracticalExperience 
-        handleCompanyName = {this.props.handleCompanyName}
-        handlePositionTitle = {this.props.handlePositionTitle}
-        handleMainTasks = {this.props.handleMainTasks}
-        handleStartDate = {this.props.handleStartDate}
-        handleEndDate = {this.props.handleEndDate} ></PracticalExperience>
+        handleCompanyName = {props.handleCompanyName}
+        handlePositionTitle = {props.handlePositionTitle}
+        handleMainTasks = {props.handleMainTasks}
+        handleStartDate = {props.handleStartDate}
+        handleEndDate = {props.handleEndDate} ></PracticalExperience>
       </div>
-    }
+    
 }
 export default OverView;
