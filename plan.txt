@@ -1,1 +1,1 @@
-Focus: Style the project
+Focus: Change the project to use functional components instead of class components, also use hooks:
