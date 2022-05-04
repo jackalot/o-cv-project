@@ -14,15 +14,13 @@ function PracticalExperience (props)
       <DateField handler={props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
     </div>
 }
-class EducationalExperience extends React.Component {
-  render () {
-    return <div className="OverView-EducationalExperience">
-      <h1>Educational Experience</h1>
-      <TextField handler={this.props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
-      <TextField handler={this.props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
-      <DateField handler={this.props.handleDateOfStudy} fieldName="dateOfStudy" className="study-date" labelText="When did you study here?"></DateField>
-    </div>
-  }
+function EducationalExperience (props) {
+  return <div className="OverView-EducationalExperience">
+  <h1>Educational Experience</h1>
+  <TextField handler={props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
+  <TextField handler={props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
+  <DateField handler={props.handleDateOfStudy} fieldName="dateOfStudy" className="study-date" labelText="When did you study here?"></DateField>
+  </div>
 }
 class GeneralInformation extends React.Component {
   render () {
