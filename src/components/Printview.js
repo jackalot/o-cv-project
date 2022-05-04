@@ -16,7 +16,7 @@ function GeneralInformation (props) {
             setEditing(false);
         }
     }
-    if(state.editing === false)
+    if(editing === false)
     {
         return <div className='PrintView-GeneralInformation-List'>
             <h1>General Information</h1>
