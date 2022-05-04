@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import DateField from "./DateField";
 import TextField from "./TextField";
 import '../styles/Views.css';
