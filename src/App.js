@@ -263,6 +263,56 @@ function App (props) {
       dateOfStudy: newDateOfStudy,
     })
   }
+  /* Practical Experience Handle function */
+  handleCompanyName = (newCompanyName) => {
+    setPracticalExperience({
+      companyName: newCompanyName,
+      positionTitle: practicalExperience.positionTitle,
+      mainTasks:  practicalExperience.mainTasks,
+      startDate:  practicalExperience.startDate,
+      endDate:  practicalExperience.endDate
+    })
+  }
+  /* Practical Experience Handle function */
+   handlePositionTitle = (newPositionTitle) => {
+    setPracticalExperience({
+      companyName: practicalExperience.companyName,
+      positionTitle: newPositionTitle,
+      mainTasks:  practicalExperience.mainTasks,
+      startDate:  practicalExperience.startDate,
+      endDate:  practicalExperience.endDate
+    })
+  }
+     /* Practical Experience Handle function */
+  handleMainTasks = (newMainTasks) => {
+    setPracticalExperience({
+      companyName: practicalExperience.companyName,
+      positionTitle: practicalExperience.positionTitle,
+      mainTasks:  newMainTasks,
+      startDate:  practicalExperience.startDate,
+      endDate:  practicalExperience.endDate
+    })
+  }
+   /* Practical Experience Handle function */
+  handleStartDate = (newStartDate) => {
+    setPracticalExperience({
+      companyName: practicalExperience.companyName,
+      positionTitle: practicalExperience.positionTitle,
+      mainTasks:  practicalExperience.mainTasks,
+      startDate:  newStartDate,
+      endDate:  practicalExperience.endDate
+    })
+  }
+   /* Practical Experience Handle function */
+  handleEndDate = (newEndDate) => {
+    setPracticalExperience({
+      companyName: practicalExperience.companyName,
+      positionTitle: practicalExperience.positionTitle,
+      mainTasks:  practicalExperience.mainTasks,
+      startDate:  practicalExperience.startDate,
+      endDate:  newEndDate
+    })
+  }
 }
 
 export default App;
