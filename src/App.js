@@ -202,6 +202,13 @@ function App (props) {
     titleOfStudy: 'Sample Title Of Study',
     dateOfStudy: 'Date Of Study',
  })
+ const [practicalExperience, setPracticalExperience] = useState({
+  companyName: "sample company",
+  positionTitle: 'sample position',
+  mainTasks: 'sample main tasks',
+  startDate: '1-31-2000',
+  endDate: '1-31-2000'
+ })
 }
 
 export default App;
