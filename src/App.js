@@ -215,6 +215,14 @@ function App (props) {
       setSubmiting(true);
     }
   }
+  /* General Information Handle function */
+  handleName = (newName) => {
+    setGeneralInformation({
+        name: newName.target.value,
+       email: generalInformation.email,
+       phoneNumber: generalInformation.phoneNumber
+    })
+  }
 }
 
 export default App;
