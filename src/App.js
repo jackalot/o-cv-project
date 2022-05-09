@@ -24,14 +24,14 @@ function App (props) {
    startDate: '1-31-2000',
    endDate: '1-31-2000'
   })
-  submitInputs = () => {
+  function submitInputs () {
     if(submiting === false)
     {
       setSubmiting(true);
     }
   }
   /* General Information Handle function */
-  handleName = (newName) => {
+  function handleName(newName) {
     setGeneralInformation({
         name: newName.target.value,
        email: generalInformation.email,
@@ -39,7 +39,7 @@ function App (props) {
     })
   }
   /* General Information Handle function */
-  handleEmail = (newEmail) => {
+  function handleEmail (newEmail) {
     setGeneralInformation({
       name: generalInformation.name,
      email: newEmail,
@@ -47,7 +47,7 @@ function App (props) {
     })
   }
   /* General Information Handle function */
-  handlePhoneNumber = (newPhoneNumber) => {
+  function handlePhoneNumber (newPhoneNumber) {
     setGeneralInformation({
       name: generalInformation.name,
      email: generalInformation.email,
@@ -55,7 +55,7 @@ function App (props) {
     })
   }
   /* Educational Experience Handle function */
-  handleSchoolName = (newSchoolName) => {
+  function handleSchoolName (newSchoolName) {
     setEducationalExperience({
       schoolName: newSchoolName,
       titleOfStudy: educationalExperience.titleOfStudy,
@@ -63,7 +63,7 @@ function App (props) {
     })
   }
    /* Educational Experience Handle function */
-   handleTitleOfStudy = (newTitleOfStudy) => {
+   function handleTitleOfStudy(newTitleOfStudy) {
     setEducationalExperience({
       schoolName: educationalExperience.schoolName,
       titleOfStudy: newTitleOfStudy,
@@ -71,7 +71,7 @@ function App (props) {
     })
   }
   /* Educational Experience Handle function */
-  handleDateOfStudy = (newDateOfStudy) => {
+  function handleDateOfStudy(newDateOfStudy) {
     setEducationalExperience({
       schoolName: educationalExperience.schoolName,
       titleOfStudy: educationalExperience.titleOfStudy,
@@ -79,7 +79,7 @@ function App (props) {
     })
   }
   /* Practical Experience Handle function */
-  handleCompanyName = (newCompanyName) => {
+  function handleCompanyName(newCompanyName) {
     setPracticalExperience({
       companyName: newCompanyName,
       positionTitle: practicalExperience.positionTitle,
@@ -89,7 +89,7 @@ function App (props) {
     })
   }
   /* Practical Experience Handle function */
-   handlePositionTitle = (newPositionTitle) => {
+  function handlePositionTitle(newPositionTitle) {
     setPracticalExperience({
       companyName: practicalExperience.companyName,
       positionTitle: newPositionTitle,
@@ -99,7 +99,7 @@ function App (props) {
     })
   }
      /* Practical Experience Handle function */
-  handleMainTasks = (newMainTasks) => {
+  function handleMainTasks(newMainTasks) {
     setPracticalExperience({
       companyName: practicalExperience.companyName,
       positionTitle: practicalExperience.positionTitle,
@@ -109,7 +109,7 @@ function App (props) {
     })
   }
    /* Practical Experience Handle function */
-  handleStartDate = (newStartDate) => {
+  function handleStartDate(newStartDate) {
     setPracticalExperience({
       companyName: practicalExperience.companyName,
       positionTitle: practicalExperience.positionTitle,
@@ -119,7 +119,7 @@ function App (props) {
     })
   }
    /* Practical Experience Handle function */
-  handleEndDate = (newEndDate) => {
+   function handleEndDate(newEndDate) {
     setPracticalExperience({
       companyName: practicalExperience.companyName,
       positionTitle: practicalExperience.positionTitle,
