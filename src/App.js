@@ -313,6 +313,56 @@ function App (props) {
       endDate:  newEndDate
     })
   }
+  if(submiting === false)
+  {
+    return (
+      <div className="App">
+        <form>
+        <OverView
+        /* General Information */
+        handleName = {handleName}
+        handleEmail = {handleEmail}
+        handlePhoneNumber = {handlePhoneNumber}
+        /* Practical Experience */
+        handleCompanyName = {handleCompanyName}
+        handlePositionTitle = {handlePositionTitle}
+        handleMainTasks = {handleMainTasks}
+        handleStartDate = {handleStartDate}
+        handleEndDate = {handleEndDate}
+        /* Educational Experience */
+        handleSchoolName = {handleSchoolName}
+        handleTitleOfStudy = {handleTitleOfStudy}
+        handleDateOfStudy = {handleDateOfStudy}
+        ></OverView>
+        <input onClick={submitInputs} type='submit'></input>
+        </form>
+      </div>
+    );
+  }
+  else
+  {
+    return  <div className="App">
+      <PrintView
+      generalInformation = {generalInformation}
+      educationalExperience = {educationalExperience}
+      practicalExperience = {practicalExperience}
+      /* General Information */
+      handleName = {handleName}
+      handleEmail = {handleEmail}
+      handlePhoneNumber = {handlePhoneNumber}
+      /* Practical Experience */
+      handleCompanyName = {handleCompanyName}
+      handlePositionTitle = {handlePositionTitle}
+      handleMainTasks = {handleMainTasks}
+      handleStartDate = {handleStartDate}
+      handleEndDate = {handleEndDate}
+      /* Educational Experience */
+      handleSchoolName = {handleSchoolName}
+      handleTitleOfStudy = {handleTitleOfStudy}
+      handleDateOfStudy = {handleDateOfStudy}
+       ></PrintView>
+    </div>
+  }
 }
 
 export default App;
