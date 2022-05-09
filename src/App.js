@@ -239,6 +239,30 @@ function App (props) {
      phoneNumber: newPhoneNumber
     })
   }
+  /* Educational Experience Handle function */
+  handleSchoolName = (newSchoolName) => {
+    setEducationalExperience({
+      schoolName: newSchoolName,
+      titleOfStudy: educationalExperience.titleOfStudy,
+      dateOfStudy: educationalExperience.dateOfStudy,
+    })
+  }
+   /* Educational Experience Handle function */
+   handleTitleOfStudy = (newTitleOfStudy) => {
+    setEducationalExperience({
+      schoolName: educationalExperience.schoolName,
+      titleOfStudy: newTitleOfStudy,
+      dateOfStudy: educationalExperience.dateOfStudy,
+    })
+  }
+  /* Educational Experience Handle function */
+  handleDateOfStudy = (newDateOfStudy) => {
+    setEducationalExperience({
+      schoolName: educationalExperience.schoolName,
+      titleOfStudy: educationalExperience.titleOfStudy,
+      dateOfStudy: newDateOfStudy,
+    })
+  }
 }
 
 export default App;
