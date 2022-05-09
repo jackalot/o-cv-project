@@ -142,6 +142,7 @@ function PracticalExperience (props) {
 
 }
 function PrintView (props) {
+    
     return <div className='PrintView'>
             <GeneralInformation
             generalInformation = {props.generalInformation}
@@ -150,21 +151,6 @@ function PrintView (props) {
             handleEmail = {props.handleEmail}
             handlePhoneNumber = {props.handlePhoneNumber}
             ></GeneralInformation>
-            <EducationalExperience
-             educationalExperience = {props.educationalExperience}
-              /* For editing Educational Experience */
-             handleSchoolName = {props.handleSchoolName}
-             handleTitleOfStudy = {props.handleTitleOfStudy}
-             handleDateOfStudy = {props.handleDateOfStudy}>
-            </EducationalExperience>
-            <PracticalExperience
-            practicalExperience = {props.practicalExperience}
-            /* For Editing Practical Experience */
-            handleCompanyName = {props.handleCompanyName}
-            handlePositionTitle = {props.handlePositionTitle}
-            handleMainTasks = {props.handleMainTasks}
-            handleStartDate = {props.handleStartDate}
-            handleEndDate = {props.handleEndDate}></PracticalExperience>
         </div>
 }
 export default PrintView;

@@ -1,1 +1,24 @@
 Focus: Change the project to use functional components instead of class components, also use hooks:
+* Printview.js gives an error: 
+"Uncaught Error: Objects are not valid as a React child (found: object with keys
+ {_reactName, _targetInst, type, nativeEvent, target, currentTarget, eventPhase, bubbles,
+  cancelable, timeStamp, defaultPrevented, isTrusted, isDefaultPrevented, isPropagationStopped}).
+   If you meant to render a collection of children, use an array instead."
+
+Debugging General Information at this time, so heres the code for EducationalExperience and PracticalExperience
+thats used in PrintView:
+           <EducationalExperience
+             educationalExperience = {props.educationalExperience}
+              /* For editing Educational Experience */
+             handleSchoolName = {props.handleSchoolName}
+             handleTitleOfStudy = {props.handleTitleOfStudy}
+             handleDateOfStudy = {props.handleDateOfStudy}>
+            </EducationalExperience>
+            <PracticalExperience
+            practicalExperience = {props.practicalExperience}
+            /* For Editing Practical Experience */
+            handleCompanyName = {props.handleCompanyName}
+            handlePositionTitle = {props.handlePositionTitle}
+            handleMainTasks = {props.handleMainTasks}
+            handleStartDate = {props.handleStartDate}
+            handleEndDate = {props.handleEndDate}></PracticalExperience> 
