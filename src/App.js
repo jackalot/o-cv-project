@@ -189,26 +189,32 @@ class App extends React.Component {
   }
 }
 function App (props) {
- const [submiting, setSubmiting] = useState(false);
- const [generalInformation, setGeneralInformation] = useState(
-    { 
-      name: "John",
-      email: "john@emailaddress.com",
-      phoneNumber: "+1 123-456-789"
+  const [submiting, setSubmiting] = useState(false);
+  const [generalInformation, setGeneralInformation] = useState(
+     { 
+       name: "John",
+       email: "john@emailaddress.com",
+       phoneNumber: "+1 123-456-789"
+     }
+   )
+  const [educationalExperience, setEducationalExperience] = useState({
+     schoolName: 'Sample School',
+     titleOfStudy: 'Sample Title Of Study',
+     dateOfStudy: 'Date Of Study',
+  })
+  const [practicalExperience, setPracticalExperience] = useState({
+   companyName: "sample company",
+   positionTitle: 'sample position',
+   mainTasks: 'sample main tasks',
+   startDate: '1-31-2000',
+   endDate: '1-31-2000'
+  })
+  submitInputs = () => {
+    if(submiting === false)
+    {
+      setSubmiting(true);
     }
-  )
- const [educationalExperience, setEducationalExperience] = useState({
-    schoolName: 'Sample School',
-    titleOfStudy: 'Sample Title Of Study',
-    dateOfStudy: 'Date Of Study',
- })
- const [practicalExperience, setPracticalExperience] = useState({
-  companyName: "sample company",
-  positionTitle: 'sample position',
-  mainTasks: 'sample main tasks',
-  startDate: '1-31-2000',
-  endDate: '1-31-2000'
- })
+  }
 }
 
 export default App;
