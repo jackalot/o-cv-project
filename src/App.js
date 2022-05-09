@@ -223,6 +223,22 @@ function App (props) {
        phoneNumber: generalInformation.phoneNumber
     })
   }
+  /* General Information Handle function */
+  handleEmail = (newEmail) => {
+    setGeneralInformation({
+      name: generalInformation.name,
+     email: newEmail,
+     phoneNumber: generalInformation.phoneNumber
+    })
+  }
+  /* General Information Handle function */
+  handlePhoneNumber = (newPhoneNumber) => {
+    setGeneralInformation({
+      name: generalInformation.name,
+     email: generalInformation.email,
+     phoneNumber: newPhoneNumber
+    })
+  }
 }
 
 export default App;
