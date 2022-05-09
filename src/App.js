@@ -188,5 +188,8 @@ class App extends React.Component {
     }
   }
 }
+function App (props) {
+  
+}
 
 export default App;
