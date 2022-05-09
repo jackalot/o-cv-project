@@ -189,7 +189,14 @@ class App extends React.Component {
   }
 }
 function App (props) {
-
+ const [submiting, setSubmiting] = useState(false);
+ const [generalInformation, setGeneralInformation] = useState(
+  { 
+    name: "John",
+    email: "john@emailaddress.com",
+    phoneNumber: "+1 123-456-789"
+  }
+ )
 }
 
 export default App;
