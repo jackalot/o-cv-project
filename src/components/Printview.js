@@ -141,32 +141,30 @@ function PracticalExperience (props) {
     }
 
 }
-class PrintView extends React.Component {
-    render() {
-        return <div className='PrintView'>
+function PrintView (props) {
+    return <div className='PrintView'>
             <GeneralInformation
-            generalInformation = {this.props.generalInformation}
+            generalInformation = {props.generalInformation}
             /* For editing General Information */
-            handleName = {this.props.handleName}
-            handleEmail = {this.props.handleEmail}
-            handlePhoneNumber = {this.props.handlePhoneNumber}
+            handleName = {props.handleName}
+            handleEmail = {props.handleEmail}
+            handlePhoneNumber = {props.handlePhoneNumber}
             ></GeneralInformation>
             <EducationalExperience
-             educationalExperience = {this.props.educationalExperience}
+             educationalExperience = {props.educationalExperience}
               /* For editing Educational Experience */
-             handleSchoolName = {this.props.handleSchoolName}
-             handleTitleOfStudy = {this.props.handleTitleOfStudy}
-             handleDateOfStudy = {this.props.handleDateOfStudy}>
-            ></EducationalExperience>
+             handleSchoolName = {props.handleSchoolName}
+             handleTitleOfStudy = {props.handleTitleOfStudy}
+             handleDateOfStudy = {props.handleDateOfStudy}>
+            </EducationalExperience>
             <PracticalExperience
-            practicalExperience = {this.props.practicalExperience}
+            practicalExperience = {props.practicalExperience}
             /* For Editing Practical Experience */
-            handleCompanyName = {this.props.handleCompanyName}
-            handlePositionTitle = {this.props.handlePositionTitle}
-            handleMainTasks = {this.props.handleMainTasks}
-            handleStartDate = {this.props.handleStartDate}
-            handleEndDate = {this.props.handleEndDate}></PracticalExperience>
+            handleCompanyName = {props.handleCompanyName}
+            handlePositionTitle = {props.handlePositionTitle}
+            handleMainTasks = {props.handleMainTasks}
+            handleStartDate = {props.handleStartDate}
+            handleEndDate = {props.handleEndDate}></PracticalExperience>
         </div>
-    }
 }
 export default PrintView;
