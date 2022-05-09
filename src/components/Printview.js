@@ -92,67 +92,54 @@ function EducationalExperience (props) {
     }
 
 }
-class PracticalExperience extends React.Component {
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            editing: false,
-        }
-    }
-    startEditing = () => {
-        if(this.state.editing === false)
+function PracticalExperience (props) {
+    const [editing, setEditing] = useState(false);
+    function changeEditing () {
+        if(editing === false)
         {
-            this.setState({
-                editing : true,
-            })
-        }
-    }
-    stopEditing = () => {
-        if(this.state.editing === true)
-        {
-            this.setState({
-                editing : false,
-            })
-        }
-    }
-    render() {
-        if(this.state.editing === false)
-        {
-            return <div className='PrintView-PracticalExperience-List'>
-                <h1>Practical Experience</h1>
-                <button onClick={this.startEditing}>Edit Section</button>
-                <ul>
-                   <li>Company Name: {this.props.practicalExperience.companyName}</li>
-                   <li>Position Title: {this.props.practicalExperience.positionTitle}</li>
-                   <li>Main Tasks: {this.props.practicalExperience.mainTasks}</li>
-                   <li>Start Date: {this.props.practicalExperience.startDate}</li>
-                   <li>End Date: {this.props.practicalExperience.endDate}</li>
-                </ul>
-            </div>
+            setEditing(true);
         }
         else
         {
-            return <div className='PrintView-PracticalExperience-Edit'>
-                <h1>Practical Experience</h1>
-                <ul>
-                    <li>Old Info</li>
-                   <li>Company Name: {this.props.practicalExperience.companyName}</li>
-                   <li>Position Title: {this.props.practicalExperience.positionTitle}</li>
-                   <li>Main Tasks: {this.props.practicalExperience.mainTasks}</li>
-                   <li>Start Date: {this.props.practicalExperience.startDate}</li>
-                   <li>End Date: {this.props.practicalExperience.endDate}</li>
-                </ul>
-                <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
-                <TextField defaultValue={this.props.practicalExperience.companyName} handler={this.props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
-                <TextField defaultValue={this.props.practicalExperience.positionTitle} handler={this.props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
-                <TextField defaultValue={this.props.practicalExperience.mainTasks} handler={this.props.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
-                <DateField defaultValue={this.props.practicalExperience.startDate} handler={this.props.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
-                <DateField defaultValue={this.props.practicalExperience.endDate} handler={this.props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
-                <button onClick={this.stopEditing}>Submit Changes</button>
-            </div>
+            setEditing(false);
         }
     }
+    if(editing === false)
+    {
+        return <div className='PrintView-PracticalExperience-List'>
+            <h1>Practical Experience</h1>
+            <button onClick={changeEditing}>Edit Section</button>
+            <ul>
+               <li>Company Name: {props.practicalExperience.companyName}</li>
+               <li>Position Title: {props.practicalExperience.positionTitle}</li>
+               <li>Main Tasks: {props.practicalExperience.mainTasks}</li>
+               <li>Start Date: {props.practicalExperience.startDate}</li>
+               <li>End Date: {props.practicalExperience.endDate}</li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        return <div className='PrintView-PracticalExperience-Edit'>
+            <h1>Practical Experience</h1>
+            <ul>
+                <li>Old Info</li>
+               <li>Company Name: {props.practicalExperience.companyName}</li>
+               <li>Position Title: {props.practicalExperience.positionTitle}</li>
+               <li>Main Tasks: {props.practicalExperience.mainTasks}</li>
+               <li>Start Date: {props.practicalExperience.startDate}</li>
+               <li>End Date: {props.practicalExperience.endDate}</li>
+            </ul>
+            <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
+            <TextField defaultValue={props.practicalExperience.companyName} handler={props.handleCompanyName} fieldName="companyName" className="company-name" labelText="What is the name of your current/last company?"></TextField>
+            <TextField defaultValue={props.practicalExperience.positionTitle} handler={props.handlePositionTitle} fieldName="positionTitle" className="position-title" labelText="What is the title of your position at that company?"></TextField>
+            <TextField defaultValue={props.practicalExperience.mainTasks} handler={props.handleMainTasks} fieldName="mainTasks" className="main-tasks" labelText="What were your main tasks at that company?"></TextField>
+            <DateField defaultValue={props.practicalExperience.startDate} handler={props.handleStartDate} fieldName="startDate" className="start-Date" labelText="When did you start working at this position?"></DateField>
+            <DateField defaultValue={props.practicalExperience.endDate} handler={props.handleEndDate} fieldName="endDate" className="end-Date" labelText="When did you stop working at this position?"></DateField>
+            <button onClick={changeEditing}>Submit Changes</button>
+        </div>
+    }
+
 }
 class PrintView extends React.Component {
     render() {
