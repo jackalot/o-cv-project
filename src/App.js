@@ -191,12 +191,17 @@ class App extends React.Component {
 function App (props) {
  const [submiting, setSubmiting] = useState(false);
  const [generalInformation, setGeneralInformation] = useState(
-  { 
-    name: "John",
-    email: "john@emailaddress.com",
-    phoneNumber: "+1 123-456-789"
-  }
- )
+    { 
+      name: "John",
+      email: "john@emailaddress.com",
+      phoneNumber: "+1 123-456-789"
+    }
+  )
+ const [educationalExperience, setEducationalExperience] = useState({
+    schoolName: 'Sample School',
+    titleOfStudy: 'Sample Title Of Study',
+    dateOfStudy: 'Date Of Study',
+ })
 }
 
 export default App;
