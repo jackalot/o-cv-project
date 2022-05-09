@@ -49,61 +49,48 @@ function GeneralInformation (props) {
     }
 
 }
-class EducationalExperience extends React.Component {
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            editing: false,
-        }
-    }
-    startEditing = () => {
-        if(this.state.editing === false)
+function EducationalExperience (props) {
+    const [editing, setEditing] = useState(false);
+    function changeEditing () {
+        if(editing === false)
         {
-            this.setState({
-                editing : true,
-            })
-        }
-    }
-    stopEditing = () => {
-        if(this.state.editing === true)
-        {
-            this.setState({
-                editing : false,
-            })
-        }
-    }
-    render() {
-        if(this.state.editing === false)
-        {
-            return <div className='PrintView-EducationalExperience-List'>
-            <h1>Educational Experience</h1>
-            <button onClick={this.startEditing}>Edit Section</button>
-            <ul>
-                   <li>School Name: {this.props.educationalExperience.schoolName}</li>
-                   <li>Title of Study: {this.props.educationalExperience.titleOfStudy}</li>
-                   <li>Date Of Study: {this.props.educationalExperience.dateOfStudy}</li>
-            </ul>
-            </div>
+            setEditing(true);
         }
         else
         {
-            return <div className='PrintView-EducationalExperience-Edit'>
-                <h1>Educational Experience</h1>
-                <ul>
-                    <li>Old Info</li>
-                   <li>School Name: {this.props.educationalExperience.schoolName}</li>
-                   <li>Title of Study: {this.props.educationalExperience.titleOfStudy}</li>
-                   <li>Date Of Study: {this.props.educationalExperience.dateOfStudy}</li>
-                </ul>
-                <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
-                <TextField defaultValue={this.props.educationalExperience.schoolName} handler={this.props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
-                <TextField defaultValue={this.props.educationalExperience.titleOfStudy} handler={this.props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
-                <DateField defaultValue={this.props.educationalExperience.dateOfStudy} handler={this.props.handleDateOfStudy} fieldName="dateOfStudy" className="study-date" labelText="When did you study here?"></DateField>
-                <button onClick={this.stopEditing}>Submit Changes</button>
-            </div>
+            setEditing(false);
         }
     }
+    if(editing === false)
+    {
+        return <div className='PrintView-EducationalExperience-List'>
+        <h1>Educational Experience</h1>
+        <button onClick={changeEditing}>Edit Section</button>
+        <ul>
+               <li>School Name: {props.educationalExperience.schoolName}</li>
+               <li>Title of Study: {props.educationalExperience.titleOfStudy}</li>
+               <li>Date Of Study: {props.educationalExperience.dateOfStudy}</li>
+        </ul>
+        </div>
+    }
+    else
+    {
+        return <div className='PrintView-EducationalExperience-Edit'>
+            <h1>Educational Experience</h1>
+            <ul>
+                <li>Old Info</li>
+               <li>School Name: {props.educationalExperience.schoolName}</li>
+               <li>Title of Study: {props.educationalExperience.titleOfStudy}</li>
+               <li>Date Of Study: {props.educationalExperience.dateOfStudy}</li>
+            </ul>
+            <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
+            <TextField defaultValue={props.educationalExperience.schoolName} handler={props.handleSchoolName} fieldName="school-name" className="school-name" labelText="What is the school's name?"></TextField>
+            <TextField defaultValue={props.educationalExperience.titleOfStudy} handler={props.handleTitleOfStudy} fieldName="title-of-study" className="study-title" labelText="What is the title of what you studied?"></TextField>
+            <DateField defaultValue={props.educationalExperience.dateOfStudy} handler={props.handleDateOfStudy} fieldName="dateOfStudy" className="study-date" labelText="When did you study here?"></DateField>
+            <button onClick={changeEditing}>Submit Changes</button>
+        </div>
+    }
+
 }
 class PracticalExperience extends React.Component {
     constructor(props)
