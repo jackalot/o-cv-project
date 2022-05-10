@@ -22,9 +22,9 @@ function GeneralInformation (props) {
             <h1>General Information</h1>
             <button onClick={changeEditing}>Edit Section</button>
             <ul>
-                <li>Name: {props.generalInformation.name}</li>
-                <li>Email: {props.generalInformation.email}</li>
-                <li>Phone Number: {props.generalInformation.phoneNumber}</li>
+                <li>Name: {props.name}</li>
+                <li>Email: {props.email}</li>
+                <li>Phone Number: {props.phoneNumber}</li>
             </ul>
             </div>
     }
@@ -34,16 +34,16 @@ function GeneralInformation (props) {
              <h1>General Information</h1>
              <ul>
                  <li>Old Info</li>
-                <li>Name: {props.generalInformation.name}</li>
-                <li>Email: {props.generalInformation.email}</li>
-                <li>Phone Number: {props.generalInformation.phoneNumber}</li>
+                <li>Name: {props.name}</li>
+                <li>Email: {props.email}</li>
+                <li>Phone Number: {props.phoneNumber}</li>
             </ul>
             <h2>Please add the new info. For anything you would like to remain the same, type it in again.</h2>
-            <TextField defaultValue={props.generalInformation.name} handler={props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
+            <TextField defaultValue={props.name} handler={props.handleName} fieldName="name" className="our-name" labelText="What is your name?"></TextField>
             <label htmlFor="yourEmail">Please Enter Your Email Address:</label>
-            <input defaultValue={props.generalInformation.email} onChange={props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
+            <input defaultValue={props.email} onChange={props.handleEmail} className="your-email" id="yourEmail" type='email'></input>
             <label htmlFor="phoneNumber">Please enter a phone number</label>
-            <input defaultValue={props.generalInformation.phoneNumber} onChange={props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
+            <input defaultValue={props.phoneNumber} onChange={props.handlePhoneNumber} className="phone-number" type="tel" placeholder="+1 123-456-789" pattern="[0-9]{3}-[0-9]{3}-{0-9}{4}"></input>
             <button onClick={changeEditing}>Submit Changes</button>
         </div>
     }
@@ -145,7 +145,10 @@ function PrintView (props) {
     
     return <div className='PrintView'>
             <GeneralInformation
-            generalInformation = {props.generalInformation}
+            name = {props.name}
+            email = {props.email}
+            phoneNumber = {props.phoneNumber}
+            
             /* For editing General Information */
             handleName = {props.handleName}
             handleEmail = {props.handleEmail}
