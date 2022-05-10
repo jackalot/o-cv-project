@@ -142,7 +142,6 @@ function PracticalExperience (props) {
 
 }
 function PrintView (props) {
-    
     return <div className='PrintView'>
             <GeneralInformation
             name = {props.name}
