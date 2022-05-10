@@ -29,6 +29,10 @@ function App (props) {
     {
       setSubmiting(true);
     }
+    else
+    {
+      setSubmiting(false);
+    }
   }
   /* General Information Handle function */
   function handleName(newName) {
