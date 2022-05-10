@@ -46,7 +46,7 @@ function App (props) {
   function handleEmail (newEmail) {
     setGeneralInformation({
       name: generalInformation.name,
-     email: newEmail,
+     email: newEmail.target.value,
      phoneNumber: generalInformation.phoneNumber
     })
   }
@@ -55,13 +55,13 @@ function App (props) {
     setGeneralInformation({
       name: generalInformation.name,
      email: generalInformation.email,
-     phoneNumber: newPhoneNumber
+     phoneNumber: newPhoneNumber.target.value
     })
   }
   /* Educational Experience Handle function */
   function handleSchoolName (newSchoolName) {
     setEducationalExperience({
-      schoolName: newSchoolName,
+      schoolName: newSchoolName.target.value,
       titleOfStudy: educationalExperience.titleOfStudy,
       dateOfStudy: educationalExperience.dateOfStudy,
     })
@@ -70,7 +70,7 @@ function App (props) {
    function handleTitleOfStudy(newTitleOfStudy) {
     setEducationalExperience({
       schoolName: educationalExperience.schoolName,
-      titleOfStudy: newTitleOfStudy,
+      titleOfStudy: newTitleOfStudy.target.value,
       dateOfStudy: educationalExperience.dateOfStudy,
     })
   }
@@ -79,13 +79,13 @@ function App (props) {
     setEducationalExperience({
       schoolName: educationalExperience.schoolName,
       titleOfStudy: educationalExperience.titleOfStudy,
-      dateOfStudy: newDateOfStudy,
+      dateOfStudy: newDateOfStudy.target.value,
     })
   }
   /* Practical Experience Handle function */
   function handleCompanyName(newCompanyName) {
     setPracticalExperience({
-      companyName: newCompanyName,
+      companyName: newCompanyName.target.value,
       positionTitle: practicalExperience.positionTitle,
       mainTasks:  practicalExperience.mainTasks,
       startDate:  practicalExperience.startDate,
@@ -96,7 +96,7 @@ function App (props) {
   function handlePositionTitle(newPositionTitle) {
     setPracticalExperience({
       companyName: practicalExperience.companyName,
-      positionTitle: newPositionTitle,
+      positionTitle: newPositionTitle.target.value,
       mainTasks:  practicalExperience.mainTasks,
       startDate:  practicalExperience.startDate,
       endDate:  practicalExperience.endDate
@@ -107,7 +107,7 @@ function App (props) {
     setPracticalExperience({
       companyName: practicalExperience.companyName,
       positionTitle: practicalExperience.positionTitle,
-      mainTasks:  newMainTasks,
+      mainTasks:  newMainTasks.target.value,
       startDate:  practicalExperience.startDate,
       endDate:  practicalExperience.endDate
     })
@@ -118,7 +118,7 @@ function App (props) {
       companyName: practicalExperience.companyName,
       positionTitle: practicalExperience.positionTitle,
       mainTasks:  practicalExperience.mainTasks,
-      startDate:  newStartDate,
+      startDate:  newStartDate.target.value,
       endDate:  practicalExperience.endDate
     })
   }
@@ -129,7 +129,7 @@ function App (props) {
       positionTitle: practicalExperience.positionTitle,
       mainTasks:  practicalExperience.mainTasks,
       startDate:  practicalExperience.startDate,
-      endDate:  newEndDate
+      endDate:  newEndDate.target.value
     })
   }
   if(submiting === false)
