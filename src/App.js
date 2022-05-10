@@ -162,9 +162,7 @@ function App (props) {
   {
     return  <div className="App">
       <PrintView
-      name = {generalInformation.name}
-      email = {generalInformation.email}
-      phoneNumber = {generalInformation.phoneNumber}
+     generalInformation = {generalInformation}
       educationalExperience = {educationalExperience}
       practicalExperience = {practicalExperience}
       /* General Information */

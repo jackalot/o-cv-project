@@ -144,9 +144,7 @@ function PracticalExperience (props) {
 function PrintView (props) {
     return <div className='PrintView'>
             <GeneralInformation
-            name = {props.name}
-            email = {props.email}
-            phoneNumber = {props.phoneNumber}
+            generalInformation = {props.generalInformation}
             
             /* For editing General Information */
             handleName = {props.handleName}
